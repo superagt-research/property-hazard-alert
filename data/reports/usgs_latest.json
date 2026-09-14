@@ -1,0 +1,182 @@
+{
+  "run_id": "20260914T130536.155176Z-b02ad944",
+  "source": "usgs",
+  "started_at": "2026-09-14T13:05:36.155176Z",
+  "completed_at": "2026-09-14T13:05:39.158065Z",
+  "status": "success",
+  "records_loaded": 38,
+  "records_quarantined": 0,
+  "geometry_present": 38,
+  "geometry_roles": {
+    "point": 38
+  },
+  "hazard_types": {
+    "earthquake": 38
+  },
+  "quality_flags": {
+    "global_feed_requires_us_or_portfolio_spatial_filter": 38,
+    "epicenter_is_not_damage_footprint": 38,
+    "preliminary_earthquake_parameters": 9,
+    "shakemap_is_modelled_shaking_not_damage": 4
+  },
+  "metrics": {
+    "upstream_event_count": 38,
+    "normalized_count": 38,
+    "feed_generated_at": "2026-09-14T13:04:49Z",
+    "scope": "global_feed_pending_downstream_us_portfolio_filter",
+    "shakemap_enriched": 4,
+    "shakemap_grids_parsed": 4,
+    "shakemap_errors": 0,
+    "shakemap_deferred": 0,
+    "optional_enrichment_complete": true
+  },
+  "error": null,
+  "http_requests": [
+    {
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
+      "requested_at": "2026-09-14T13:05:36.179643Z",
+      "retrieved_at": "2026-09-14T13:05:36.359952Z",
+      "status": 200,
+      "bytes": 27295,
+      "sha256": "59c63d438c24cb8af130b69dab9cb9307ee680d0681554192ba950e1ac311cef",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/59c63d438c24cb8af130b69dab9cb9307ee680d0681554192ba950e1ac311cef.bin",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 13:04:49 GMT",
+        "Cache-Control": "public, max-age=60",
+        "Expires": "Mon, 14 Sep 2026 13:05:49 GMT",
+        "Last-Modified": "Mon, 14 Sep 2026 13:04:49 GMT",
+        "Age": "47"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thcs.geojson",
+      "requested_at": "2026-09-14T13:05:36.367827Z",
+      "retrieved_at": "2026-09-14T13:05:36.577245Z",
+      "status": 200,
+      "bytes": 45078,
+      "sha256": "e9c9b1fab54fa33f263af879f2db004a079e9cce09c6a02b8d4e131baa6cff04",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/e9c9b1fab54fa33f263af879f2db004a079e9cce09c6a02b8d4e131baa6cff04.bin",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 13:05:16 GMT",
+        "Cache-Control": "public, max-age=60",
+        "Expires": "Mon, 14 Sep 2026 13:06:16 GMT",
+        "Last-Modified": "Mon, 14 Sep 2026 13:05:16 GMT",
+        "Age": "20"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/pdl/products/urn:usgs-product:us:shakemap:us7000thcs:1789390898141/contents/download/grid.xml",
+      "requested_at": "2026-09-14T13:05:36.579247Z",
+      "retrieved_at": "2026-09-14T13:05:37.029771Z",
+      "status": 200,
+      "bytes": 2741971,
+      "sha256": "d5833f3b09b49060bdf9a7e02df7831c66ab5009e722955e4705847619e91890",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/d5833f3b09b49060bdf9a7e02df7831c66ab5009e722955e4705847619e91890.bin",
+      "headers": {
+        "Content-Type": "text/xml; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 13:03:33 GMT",
+        "Cache-Control": "max-age=31536000",
+        "Age": "123"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000thc6.geojson",
+      "requested_at": "2026-09-14T13:05:37.116339Z",
+      "retrieved_at": "2026-09-14T13:05:37.289802Z",
+      "status": 200,
+      "bytes": 42852,
+      "sha256": "5005f8b5d0663f3d10da7e58c4bcc7034514ab7c382467b550463edd5c20c45e",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/5005f8b5d0663f3d10da7e58c4bcc7034514ab7c382467b550463edd5c20c45e.bin",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 13:05:16 GMT",
+        "Cache-Control": "public, max-age=60",
+        "Expires": "Mon, 14 Sep 2026 13:06:16 GMT",
+        "Last-Modified": "Mon, 14 Sep 2026 13:05:16 GMT",
+        "Age": "21"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/pdl/products/urn:usgs-product:us:shakemap:us7000thc6:1789385468697/contents/download/grid.xml",
+      "requested_at": "2026-09-14T13:05:37.293808Z",
+      "retrieved_at": "2026-09-14T13:05:37.617228Z",
+      "status": 200,
+      "bytes": 2684917,
+      "sha256": "b095cb9b0985a1ac5cbad24634ac505e841217845e29fb1812b1b4c818cb95cd",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/b095cb9b0985a1ac5cbad24634ac505e841217845e29fb1812b1b4c818cb95cd.bin",
+      "headers": {
+        "Content-Type": "text/xml; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 12:58:05 GMT",
+        "Cache-Control": "max-age=31536000",
+        "Age": "452"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000tha3.geojson",
+      "requested_at": "2026-09-14T13:05:37.741226Z",
+      "retrieved_at": "2026-09-14T13:05:37.901355Z",
+      "status": 200,
+      "bytes": 34064,
+      "sha256": "57d6fb766b25fdb91fc94099047b90678fbe7fdbcff38dc1351b5b1dc3bea4ed",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/57d6fb766b25fdb91fc94099047b90678fbe7fdbcff38dc1351b5b1dc3bea4ed.bin",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 13:05:17 GMT",
+        "Cache-Control": "public, max-age=60",
+        "Expires": "Mon, 14 Sep 2026 13:06:17 GMT",
+        "Last-Modified": "Mon, 14 Sep 2026 13:05:17 GMT",
+        "Age": "21"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/pdl/products/urn:usgs-product:us:shakemap:us7000tha3:1789361969518/contents/download/grid.xml",
+      "requested_at": "2026-09-14T13:05:37.946447Z",
+      "retrieved_at": "2026-09-14T13:05:38.269485Z",
+      "status": 200,
+      "bytes": 2719161,
+      "sha256": "eeda6eec8caf1346ef1479a6550a840ec905e08ed065244f275f4b292c30d94d",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/eeda6eec8caf1346ef1479a6550a840ec905e08ed065244f275f4b292c30d94d.bin",
+      "headers": {
+        "Content-Type": "text/xml; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 12:58:06 GMT",
+        "Cache-Control": "max-age=31536000",
+        "Age": "452"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/hv75034997.geojson",
+      "requested_at": "2026-09-14T13:05:38.350321Z",
+      "retrieved_at": "2026-09-14T13:05:38.536440Z",
+      "status": 200,
+      "bytes": 38483,
+      "sha256": "3de2954d88e0c516e5b3b52a1c3b197c2f9ae9b7abc9994afe7fe832e41b327f",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/3de2954d88e0c516e5b3b52a1c3b197c2f9ae9b7abc9994afe7fe832e41b327f.bin",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Mon, 14 Sep 2026 13:05:17 GMT",
+        "Cache-Control": "public, max-age=60",
+        "Expires": "Mon, 14 Sep 2026 13:06:17 GMT",
+        "Last-Modified": "Mon, 14 Sep 2026 13:05:17 GMT",
+        "Age": "21"
+      }
+    },
+    {
+      "url": "https://earthquake.usgs.gov/pdl/products/urn:usgs-product:us:shakemap:us7000th7l:1789329853427/contents/download/grid.xml",
+      "requested_at": "2026-09-14T13:05:38.540441Z",
+      "retrieved_at": "2026-09-14T13:05:39.075543Z",
+      "status": 200,
+      "bytes": 3122967,
+      "sha256": "d72dfc617842835f0105cba47a41e91881a211e99dbad7bd03a34b7933cfc30e",
+      "raw_path": "data/raw/usgs/20260914T130536.155176Z-b02ad944/d72dfc617842835f0105cba47a41e91881a211e99dbad7bd03a34b7933cfc30e.bin",
+      "headers": {
+        "Content-Type": "text/xml; charset=utf-8",
+        "Date": "Sun, 13 Sep 2026 20:12:10 GMT",
+        "Cache-Control": "max-age=31536000",
+        "Age": "60808"
+      }
+    }
+  ],
+  "changed_records": 38
+}

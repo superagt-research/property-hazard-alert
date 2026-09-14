@@ -1,0 +1,15 @@
+data/raw/
+data/http_cache/
+data/probes/
+data/normalized/
+data/*.sqlite*
+__pycache__/
+*.pyc
+
+.env
+.env.*
+!.env.example
+.secrets/
+*.egg-info/
+build/
+dist/

@@ -1,0 +1,346 @@
+{
+  "run_id": "20260914T125834.380949Z-51a5f715",
+  "source": "nifc",
+  "started_at": "2026-09-14T12:58:34.380949Z",
+  "completed_at": "2026-09-14T12:58:48.390674Z",
+  "status": "success",
+  "records_loaded": 446,
+  "records_quarantined": 0,
+  "geometry_present": 446,
+  "geometry_roles": {
+    "observed_perimeter": 180,
+    "point": 266
+  },
+  "hazard_types": {
+    "wildfire": 446
+  },
+  "quality_flags": {
+    "stale_perimeter": 156,
+    "observed_perimeter_not_spread_forecast": 180,
+    "fully_contained_does_not_mean_extinguished": 93,
+    "perimeter_unavailable": 266,
+    "incident_point_is_not_fire_extent": 266,
+    "containment_unknown": 249,
+    "perimeter_observation_time_unknown": 18,
+    "stale_incident": 317
+  },
+  "metrics": {
+    "incident_snapshot_ids": 446,
+    "incident_rows": 446,
+    "perimeter_snapshot_ids": 180,
+    "perimeter_rows": 180,
+    "perimeter_feed_available": true,
+    "normalized_count": 446,
+    "with_perimeter": 180,
+    "stale_incident_count": 317,
+    "stale_perimeter_count": 156
+  },
+  "error": null,
+  "http_requests": [
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?where=IncidentTypeCategory%3D%27WF%27&returnIdsOnly=true&f=json",
+      "requested_at": "2026-09-14T12:58:34.414222Z",
+      "retrieved_at": "2026-09-14T12:58:34.602510Z",
+      "status": 304,
+      "bytes": 3170,
+      "sha256": "e6e1b7549acc6a133d9acd85208df54c544dc3ca028a719cee0b8b9d0cfd8b44",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/e6e1b7549acc6a133d9acd85208df54c544dc3ca028a719cee0b8b9d0cfd8b44.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:07 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=529908%2C532031%2C533311%2C536554%2C536655%2C539976%2C540138%2C540200%2C540797%2C541145%2C541168%2C541739%2C542616%2C542828%2C542882%2C543140%2C543723%2C544531%2C544554%2C544982%2C545296%2C545689%2C546134%2C547007%2C549370%2C549554%2C549563%2C549743%2C550242%2C553227%2C554175%2C554238%2C554866%2C557383%2C557567%2C559313%2C559318%2C560071%2C560929%2C560931%2C561635%2C561698%2C563047%2C564760%2C565289%2C565523%2C566114%2C566208%2C566305%2C566985&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:34.617938Z",
+      "retrieved_at": "2026-09-14T12:58:34.898767Z",
+      "status": 200,
+      "bytes": 37899,
+      "sha256": "270f025a05b0e37c24510a1acb0a890ce48b50bc615a4eb180de15c7ce8acbc1",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/270f025a05b0e37c24510a1acb0a890ce48b50bc615a4eb180de15c7ce8acbc1.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:35 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=567170%2C567436%2C567486%2C567545%2C568375%2C568475%2C569222%2C569302%2C571921%2C571925%2C572082%2C572227%2C572229%2C572302%2C572460%2C572613%2C572640%2C572677%2C572735%2C572902%2C573229%2C573340%2C573409%2C573680%2C573717%2C573839%2C573858%2C574344%2C574687%2C574724%2C575009%2C575089%2C575107%2C575113%2C575135%2C575138%2C575142%2C575146%2C575160%2C575195%2C575231%2C575343%2C575361%2C575419%2C575493%2C575494%2C575496%2C575517%2C575539%2C575549&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:34.900766Z",
+      "retrieved_at": "2026-09-14T12:58:35.290645Z",
+      "status": 200,
+      "bytes": 38796,
+      "sha256": "4c46b3b01741dfa3488751f34bc4e32fcdab1ecba5df95a3958924b37e4d0512",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/4c46b3b01741dfa3488751f34bc4e32fcdab1ecba5df95a3958924b37e4d0512.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:35 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=575554%2C575558%2C575572%2C575577%2C575600%2C575607%2C575616%2C575641%2C575643%2C575661%2C575703%2C575753%2C575790%2C575804%2C575874%2C575994%2C576040%2C576067%2C576225%2C576237%2C577829%2C577871%2C577984%2C578091%2C578135%2C578140%2C578212%2C578234%2C578251%2C578260%2C578263%2C578382%2C578399%2C578509%2C578543%2C578564%2C578605%2C578646%2C578673%2C578719%2C578799%2C578815%2C578829%2C578841%2C578915%2C578936%2C578944%2C579018%2C579156%2C579390&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:35.290645Z",
+      "retrieved_at": "2026-09-14T12:58:35.697643Z",
+      "status": 200,
+      "bytes": 38822,
+      "sha256": "b4af2426e3545f8655a1fedc2f0c67687adda6e1515e15efba12d128d15146fa",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/b4af2426e3545f8655a1fedc2f0c67687adda6e1515e15efba12d128d15146fa.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:35 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=579418%2C579474%2C579498%2C579610%2C579640%2C579811%2C579918%2C580069%2C580123%2C580325%2C580340%2C580345%2C580460%2C580487%2C580541%2C580613%2C580860%2C580886%2C581135%2C581383%2C581414%2C581473%2C581482%2C581567%2C581992%2C582039%2C582468%2C582557%2C582621%2C582700%2C583008%2C583265%2C583338%2C583379%2C583465%2C583729%2C583828%2C585307%2C585648%2C585691%2C585850%2C586382%2C586535%2C586593%2C586675%2C586832%2C587192%2C587271%2C587273%2C587387&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:35.698656Z",
+      "retrieved_at": "2026-09-14T12:58:35.987778Z",
+      "status": 200,
+      "bytes": 38109,
+      "sha256": "5e7ec1427853afea1ccc283eda61229306d6ebfd175b3e8f9ef7a1b29e461000",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/5e7ec1427853afea1ccc283eda61229306d6ebfd175b3e8f9ef7a1b29e461000.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:36 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=587488%2C587847%2C588066%2C588147%2C588165%2C588197%2C588208%2C588303%2C588338%2C588480%2C588627%2C588644%2C588650%2C588686%2C588711%2C589080%2C589105%2C589169%2C589196%2C589252%2C589345%2C589371%2C589380%2C589438%2C589439%2C589498%2C589534%2C589631%2C589641%2C589668%2C589699%2C589735%2C589756%2C589759%2C589831%2C589883%2C589922%2C589953%2C589967%2C590098%2C590148%2C590318%2C590370%2C590479%2C590489%2C590579%2C590649%2C590654%2C590733%2C590736&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:35.988779Z",
+      "retrieved_at": "2026-09-14T12:58:36.268504Z",
+      "status": 200,
+      "bytes": 38191,
+      "sha256": "879811a003e6646fd5463663945f5717850f758de19a37bccc4e365c7298f98c",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/879811a003e6646fd5463663945f5717850f758de19a37bccc4e365c7298f98c.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:36 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=590813%2C590894%2C591062%2C591192%2C591249%2C591287%2C591447%2C591545%2C591547%2C591585%2C591615%2C591632%2C591699%2C591702%2C591707%2C591736%2C591970%2C592106%2C592114%2C592187%2C592267%2C592359%2C592416%2C592463%2C592543%2C592715%2C592746%2C592768%2C592795%2C592802%2C592806%2C592828%2C592840%2C592927%2C592966%2C593002%2C593053%2C593077%2C593079%2C593093%2C593139%2C593413%2C593414%2C593538%2C593683%2C593768%2C593782%2C593814%2C593918%2C593926&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:36.269504Z",
+      "retrieved_at": "2026-09-14T12:58:36.528906Z",
+      "status": 200,
+      "bytes": 38217,
+      "sha256": "95c5cf471d474ed5c6f733fb49002489798a2bf1b8d39c1ad33a7b9f39f73fdb",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/95c5cf471d474ed5c6f733fb49002489798a2bf1b8d39c1ad33a7b9f39f73fdb.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:36 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=593967%2C593990%2C594001%2C594006%2C594028%2C594038%2C594060%2C594078%2C594086%2C594161%2C594176%2C594181%2C594191%2C594223%2C594230%2C594244%2C594245%2C594252%2C594253%2C594268%2C594283%2C594355%2C594369%2C594375%2C594379%2C594417%2C594422%2C594445%2C594446%2C594447%2C594476%2C594480%2C594520%2C594548%2C594554%2C594561%2C594564%2C594572%2C594584%2C594585%2C594604%2C594621%2C594626%2C594632%2C594648%2C594654%2C594655%2C594659%2C594700%2C594707&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:36.529906Z",
+      "retrieved_at": "2026-09-14T12:58:36.768307Z",
+      "status": 200,
+      "bytes": 37817,
+      "sha256": "08168173ebe4389e2b95bf95fe262b14362f5680afa5c249e5b98a8a4af6887a",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/08168173ebe4389e2b95bf95fe262b14362f5680afa5c249e5b98a8a4af6887a.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:36 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=594709%2C594723%2C594725%2C594727%2C594732%2C594733%2C594736%2C594744%2C594750%2C594753%2C594754%2C594778%2C594782%2C594783%2C594785%2C594789%2C594791%2C594793%2C594802%2C594803%2C594805%2C594808%2C594811%2C594814%2C594815%2C594820%2C594821%2C594854%2C594859%2C594860%2C594862%2C594871%2C594873%2C594897%2C594899%2C594905%2C594908%2C594910%2C594913%2C594914%2C594918%2C594932%2C594943%2C594957%2C594961%2C594962%2C594968%2C594970%2C594979%2C594983&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:36.769307Z",
+      "retrieved_at": "2026-09-14T12:58:37.099652Z",
+      "status": 200,
+      "bytes": 37831,
+      "sha256": "d2163c98c4994e9039c8da06f3e13f3bb9bd83b1284018d7a0d760b0fc98283c",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/d2163c98c4994e9039c8da06f3e13f3bb9bd83b1284018d7a0d760b0fc98283c.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:37 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?objectIds=594997%2C595006%2C595014%2C595019%2C595022%2C595027%2C595045%2C595050%2C595056%2C595057%2C595059%2C595060%2C595064%2C595065%2C595066%2C595069%2C595072%2C595076%2C595086%2C595134%2C595145%2C595162%2C595166%2C595181%2C595184%2C595186%2C595187%2C595194%2C595202%2C595206%2C595214%2C595220%2C595223%2C595227%2C595230%2C595235%2C595248%2C595255%2C595263%2C595279%2C595281%2C595285%2C595292%2C595298%2C595303%2C595304&outFields=OBJECTID%2CIrwinID%2CIncidentName%2CIncidentTypeCategory%2CIncidentSize%2CPercentContained%2CFireDiscoveryDateTime%2CModifiedOnDateTime_dt%2CCreatedOnDateTime_dt%2CICS209ReportDateTime%2CContainmentDateTime%2CControlDateTime%2CFireOutDateTime%2CFireBehaviorGeneral%2CPOOState%2CPOOFips%2CPOOCounty%2CActiveFireCandidate%2CIsCpxChild%2CCpxID%2CCpxName%2CUniqueFireIdentifier%2CGlobalID&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:37.100645Z",
+      "retrieved_at": "2026-09-14T12:58:37.344691Z",
+      "status": 200,
+      "bytes": 34741,
+      "sha256": "fd4f017288dc664ff5a2a7034ae4975b32b5ab9c2cccf313da40ee65e1b16c93",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/fd4f017288dc664ff5a2a7034ae4975b32b5ab9c2cccf313da40ee65e1b16c93.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:37 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:06 GMT",
+        "ETag": "sd274850_-1494945793"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?where=attr_IncidentTypeCategory%3D%27WF%27&returnIdsOnly=true&f=json",
+      "requested_at": "2026-09-14T12:58:37.348701Z",
+      "retrieved_at": "2026-09-14T12:58:37.584944Z",
+      "status": 200,
+      "bytes": 1128,
+      "sha256": "395934baf8c55b4615e929d4abfbc9a9f154b167c417a9c44fe01767106b1716",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/395934baf8c55b4615e929d4abfbc9a9f154b167c417a9c44fe01767106b1716.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:37 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=50645%2C52291%2C52435%2C53797%2C54851%2C54901%2C55049%2C55136%2C55237%2C55326%2C55336%2C55343%2C55353%2C55708%2C55805%2C55851%2C55884%2C55924%2C55934%2C55955%2C55985%2C55988%2C56033%2C56035%2C56168&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:37.585945Z",
+      "retrieved_at": "2026-09-14T12:58:39.499602Z",
+      "status": 200,
+      "bytes": 7048444,
+      "sha256": "773ef9e5d38e25efd67e70758c0106374c5723e5fc4b2474b3e309554219128d",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/773ef9e5d38e25efd67e70758c0106374c5723e5fc4b2474b3e309554219128d.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:39 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=56241%2C56244%2C56248%2C56249%2C56250%2C56251%2C56254%2C56261%2C56279%2C56290%2C56291%2C56292%2C56294%2C56304%2C56305%2C56306%2C56308%2C56310%2C56312%2C56313%2C56314%2C56317%2C56328%2C56335%2C56356&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:39.544466Z",
+      "retrieved_at": "2026-09-14T12:58:42.863135Z",
+      "status": 200,
+      "bytes": 11664431,
+      "sha256": "37ae452536110491b489ce9d5056e76476d8c57905edd505f9571a62d26ba4c8",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/37ae452536110491b489ce9d5056e76476d8c57905edd505f9571a62d26ba4c8.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:40 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=56419%2C56431%2C56498%2C56502%2C56532%2C56590%2C56599%2C56600%2C56601%2C56602%2C56603%2C56653%2C56700%2C56709%2C56711%2C56712%2C56714%2C56715%2C56722%2C56731%2C56748%2C56752%2C56755%2C56882%2C56899&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:42.941439Z",
+      "retrieved_at": "2026-09-14T12:58:44.057772Z",
+      "status": 200,
+      "bytes": 7280869,
+      "sha256": "4e7fa745535493e42a475c1e559699a825f9b9f9419a611f66e0dcf22758c0a5",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/4e7fa745535493e42a475c1e559699a825f9b9f9419a611f66e0dcf22758c0a5.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:43 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=56913%2C56933%2C56942%2C56944%2C57043%2C57054%2C57135%2C57152%2C57153%2C57160%2C57190%2C57203%2C57279%2C57286%2C57340%2C57349%2C57375%2C57381%2C57416%2C57432%2C57467%2C57508%2C57527%2C57534%2C57629&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:44.105657Z",
+      "retrieved_at": "2026-09-14T12:58:45.390191Z",
+      "status": 200,
+      "bytes": 4976546,
+      "sha256": "e0ceeb1e3589777e83ac858ce18cad277fe8dd9531eac8d4dcde4f759e1b22eb",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/e0ceeb1e3589777e83ac858ce18cad277fe8dd9531eac8d4dcde4f759e1b22eb.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:45 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=57644%2C57916%2C58008%2C58107%2C58112%2C58169%2C58221%2C58233%2C58234%2C58247%2C58263%2C58285%2C58287%2C58319%2C58349%2C58416%2C58519%2C58522%2C58540%2C58591%2C58602%2C58624%2C58654%2C58664%2C58670&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:45.421650Z",
+      "retrieved_at": "2026-09-14T12:58:46.302652Z",
+      "status": 200,
+      "bytes": 3104151,
+      "sha256": "52a5adb2a7ec5088b61b3f0f9ea58f93b60aa21905fbfb199bcd350084543180",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/52a5adb2a7ec5088b61b3f0f9ea58f93b60aa21905fbfb199bcd350084543180.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:46 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=58728%2C58751%2C58765%2C58767%2C58778%2C58790%2C58794%2C58797%2C58798%2C58833%2C58851%2C58864%2C58919%2C58940%2C59024%2C59027%2C59044%2C59047%2C59050%2C59174%2C59186%2C59212%2C59232%2C59263%2C59279&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:46.324362Z",
+      "retrieved_at": "2026-09-14T12:58:46.865046Z",
+      "status": 200,
+      "bytes": 2006702,
+      "sha256": "a87a162bab516e72ce436700993434a98b94660b489591a366f65197d3c58fc4",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/a87a162bab516e72ce436700993434a98b94660b489591a366f65197d3c58fc4.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:46 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=59299%2C59343%2C59386%2C59488%2C59489%2C59490%2C59491%2C59500%2C59580%2C60610%2C60625%2C60668%2C60684%2C60691%2C60702%2C60711%2C60713%2C60732%2C60748%2C60749%2C60750%2C60752%2C60753%2C60756%2C60758&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:46.938245Z",
+      "retrieved_at": "2026-09-14T12:58:47.433240Z",
+      "status": 200,
+      "bytes": 1168273,
+      "sha256": "0957efd5b928e8e93644787664338f2ccd8e30164fd34e60b90fd896b6caf6b1",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/0957efd5b928e8e93644787664338f2ccd8e30164fd34e60b90fd896b6caf6b1.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:47 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    },
+    {
+      "url": "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_Current/FeatureServer/0/query?objectIds=60761%2C60773%2C60789%2C60791%2C60795&outFields=OBJECTID%2Cpoly_IRWINID%2Cpoly_IncidentName%2Cpoly_DateCurrent%2Cpoly_PolygonDateTime%2Cpoly_GISAcres%2Cpoly_MapMethod%2Cpoly_Source%2CGlobalID%2Cattr_IrwinID%2Cattr_IncidentName%2Cattr_IncidentTypeCategory%2Cattr_IncidentSize%2Cattr_PercentContained%2Cattr_FireDiscoveryDateTime%2Cattr_ModifiedOnDateTime_dt%2Cattr_CreatedOnDateTime_dt%2Cattr_ICS209ReportDateTime%2Cattr_ContainmentDateTime%2Cattr_ControlDateTime%2Cattr_FireOutDateTime%2Cattr_FireBehaviorGeneral%2Cattr_POOState%2Cattr_POOFips%2Cattr_POOCounty%2Cattr_ActiveFireCandidate%2Cattr_IsCpxChild%2Cattr_CpxID%2Cattr_CpxName%2Cattr_UniqueFireIdentifier&returnGeometry=true&outSR=4326&f=geojson",
+      "requested_at": "2026-09-14T12:58:47.440256Z",
+      "retrieved_at": "2026-09-14T12:58:47.668916Z",
+      "status": 200,
+      "bytes": 31995,
+      "sha256": "ef2e6b991d7d631c31d81ac28044513479013e295fe1ad30467b26177c15080a",
+      "raw_path": "data/raw/nifc/20260914T125834.380949Z-51a5f715/ef2e6b991d7d631c31d81ac28044513479013e295fe1ad30467b26177c15080a.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 12:58:47 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300, s-maxage=300",
+        "Last-Modified": "Mon, 14 Sep 2026 12:57:17 GMT",
+        "ETag": "sd274942_-1138479025"
+      }
+    }
+  ],
+  "changed_records": 446
+}

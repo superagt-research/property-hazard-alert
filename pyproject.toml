@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "property-hazard-alert"
+version = "0.1.0"
+description = "Official public hazard feeds: local feasibility ETL, not a deployed underwriting service"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+hazard-etl = "hazard_alert.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

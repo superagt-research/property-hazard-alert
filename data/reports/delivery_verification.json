@@ -1,0 +1,244 @@
+{
+  "verified_at": "2026-09-14T13:11:22.377215Z",
+  "tests_run": 48,
+  "tests_failed": 0,
+  "tests_errors": 0,
+  "tests_skipped": 0,
+  "sources": [
+    {
+      "source": "nws",
+      "status": "success",
+      "run_id": "20260914T125617.576340Z-e9bf62c1",
+      "started_at": "2026-09-14T12:56:17.576340Z",
+      "completed_at": "2026-09-14T12:56:39.801001Z",
+      "records": 35,
+      "geometry_roles": {
+        "warning_polygon": 7,
+        "forecast_or_county_zone": 28
+      },
+      "quality_flags": {
+        "us_scope_requires_property_spatial_match": 35,
+        "native_geometry_missing": 28,
+        "coarse_zone_not_damage_footprint": 28,
+        "fire_weather_is_not_active_wildfire": 4,
+        "freeze_product_not_building_pipe_temperature": 1
+      },
+      "metrics": {
+        "active_feed_records": 323,
+        "normalized_records": 35,
+        "pages": 1,
+        "feed_updated_at": "2026-09-14T12:54:31+00:00",
+        "excluded_by_event": {
+          "Frost Advisory": 9,
+          "Marine Weather Statement": 1,
+          "Special Weather Statement": 4,
+          "Small Craft Advisory": 180,
+          "Dense Fog Advisory": 1,
+          "Beach Hazards Statement": 15,
+          "Gale Warning": 51,
+          "Heat Advisory": 20,
+          "High Surf Advisory": 2,
+          "Lake Wind Advisory": 1,
+          "Hazardous Seas Warning": 1,
+          "Brisk Wind Advisory": 1,
+          "Hydrologic Outlook": 2
+        },
+        "zone_requests_succeeded": 153,
+        "zone_request_errors": {},
+        "zone_budget": 1000,
+        "geometry_present": 35,
+        "recent_change_window_minutes": 20,
+        "change_feed_error": null,
+        "inventory_scope": "NWS national products; US property and territory scope applied downstream"
+      },
+      "raw_files_verified": 160,
+      "raw_bytes": 16061081,
+      "first_load_changes": 35,
+      "repeat_load_changes": 0,
+      "replay_current_rows": 35,
+      "replay_revisions": 35,
+      "error": null
+    },
+    {
+      "source": "usgs",
+      "status": "success",
+      "run_id": "20260914T130536.155176Z-b02ad944",
+      "started_at": "2026-09-14T13:05:36.155176Z",
+      "completed_at": "2026-09-14T13:05:39.158065Z",
+      "records": 38,
+      "geometry_roles": {
+        "point": 38
+      },
+      "quality_flags": {
+        "global_feed_requires_us_or_portfolio_spatial_filter": 38,
+        "epicenter_is_not_damage_footprint": 38,
+        "preliminary_earthquake_parameters": 9,
+        "shakemap_is_modelled_shaking_not_damage": 4
+      },
+      "metrics": {
+        "upstream_event_count": 38,
+        "normalized_count": 38,
+        "feed_generated_at": "2026-09-14T13:04:49Z",
+        "scope": "global_feed_pending_downstream_us_portfolio_filter",
+        "shakemap_enriched": 4,
+        "shakemap_grids_parsed": 4,
+        "shakemap_errors": 0,
+        "shakemap_deferred": 0,
+        "optional_enrichment_complete": true
+      },
+      "raw_files_verified": 9,
+      "raw_bytes": 11456788,
+      "first_load_changes": 38,
+      "repeat_load_changes": 0,
+      "replay_current_rows": 38,
+      "replay_revisions": 38,
+      "error": null
+    },
+    {
+      "source": "nifc",
+      "status": "success",
+      "run_id": "20260914T125834.380949Z-51a5f715",
+      "started_at": "2026-09-14T12:58:34.380949Z",
+      "completed_at": "2026-09-14T12:58:48.390674Z",
+      "records": 446,
+      "geometry_roles": {
+        "observed_perimeter": 180,
+        "point": 266
+      },
+      "quality_flags": {
+        "stale_perimeter": 156,
+        "observed_perimeter_not_spread_forecast": 180,
+        "fully_contained_does_not_mean_extinguished": 93,
+        "perimeter_unavailable": 266,
+        "incident_point_is_not_fire_extent": 266,
+        "containment_unknown": 249,
+        "perimeter_observation_time_unknown": 18,
+        "stale_incident": 317
+      },
+      "metrics": {
+        "incident_snapshot_ids": 446,
+        "incident_rows": 446,
+        "perimeter_snapshot_ids": 180,
+        "perimeter_rows": 180,
+        "perimeter_feed_available": true,
+        "normalized_count": 446,
+        "with_perimeter": 180,
+        "stale_incident_count": 317,
+        "stale_perimeter_count": 156
+      },
+      "raw_files_verified": 19,
+      "raw_bytes": 37626132,
+      "first_load_changes": 446,
+      "repeat_load_changes": 0,
+      "replay_current_rows": 446,
+      "replay_revisions": 446,
+      "error": null
+    },
+    {
+      "source": "nhc",
+      "status": "partial",
+      "run_id": "20260914T125808.787778Z-53a122ab",
+      "started_at": "2026-09-14T12:58:08.787778Z",
+      "completed_at": "2026-09-14T12:58:09.648427Z",
+      "records": 14,
+      "geometry_roles": {
+        "point": 2,
+        "forecast_cone": 2,
+        "forecast_track": 4,
+        "observed_wind_extent": 1,
+        "forecast_wind_extent": 5
+      },
+      "quality_flags": {
+        "us_boundary_spatial_match_pending": 14,
+        "storm_center_is_not_impact_footprint": 14,
+        "cone_is_not_wind_footprint": 2,
+        "track_is_not_impact_footprint": 4,
+        "analyzed_extent_not_ground_observation": 1,
+        "forecast_valid_time_unavailable": 5
+      },
+      "metrics": {
+        "active_storms": 2,
+        "products_fetched": 8,
+        "geometry_quarantine": [
+          {
+            "storm_id": "ep152026",
+            "product": "initialWindExtent",
+            "warning": "placemark_0:degenerate KML polygon"
+          }
+        ],
+        "product_failures": [],
+        "scope": "all NHC basin candidates; U.S. spatial match pending"
+      },
+      "raw_files_verified": 9,
+      "raw_bytes": 67694,
+      "first_load_changes": 0,
+      "repeat_load_changes": 0,
+      "replay_current_rows": 0,
+      "replay_revisions": 14,
+      "error": null
+    },
+    {
+      "source": "nwps",
+      "status": "success",
+      "run_id": "20260914T130539.202279Z-b150939d",
+      "started_at": "2026-09-14T13:05:39.202279Z",
+      "completed_at": "2026-09-14T13:06:00.206188Z",
+      "records": 22,
+      "geometry_roles": {
+        "point": 22
+      },
+      "quality_flags": {
+        "gauge_point_is_not_inundation_footprint": 22,
+        "property_reach_relationship_required": 22,
+        "forecast_issue_time_unavailable_in_summary": 14,
+        "collection_scope_is_sample_not_national": 22,
+        "action_stage_does_not_mean_flooding": 18
+      },
+      "metrics": {
+        "gauges_received": 2710,
+        "flood_status_counts": {
+          "observed": {
+            "no_flooding": 1563,
+            "not_defined": 798,
+            "out_of_service": 144,
+            "obs_not_current": 162,
+            "low_threshold": 35,
+            "action": 7,
+            "minor": 1
+          },
+          "forecast": {
+            "fcst_not_current": 2236,
+            "no_flooding": 285,
+            "out_of_service": 144,
+            "minor": 3,
+            "low_threshold": 6,
+            "action": 11,
+            "not_defined": 25
+          }
+        },
+        "events_emitted": 22,
+        "coverage_scope": "bounded_bbox_sample_not_national",
+        "query_scope": {
+          "bbox": [
+            -90.0,
+            24.0,
+            -75.0,
+            37.0
+          ],
+          "srid": "EPSG_4326"
+        },
+        "scope": "NWPS gauge points; not a property inundation map",
+        "stale_observation_event_count": 0,
+        "forecast_summaries_without_issue_time": 14
+      },
+      "raw_files_verified": 1,
+      "raw_bytes": 2850164,
+      "first_load_changes": 22,
+      "repeat_load_changes": 0,
+      "replay_current_rows": 22,
+      "replay_revisions": 22,
+      "error": null
+    }
+  ],
+  "failures": []
+}

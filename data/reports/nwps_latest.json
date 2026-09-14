@@ -1,0 +1,77 @@
+{
+  "run_id": "20260914T130539.202279Z-b150939d",
+  "source": "nwps",
+  "started_at": "2026-09-14T13:05:39.202279Z",
+  "completed_at": "2026-09-14T13:06:00.206188Z",
+  "status": "success",
+  "records_loaded": 22,
+  "records_quarantined": 0,
+  "geometry_present": 22,
+  "geometry_roles": {
+    "point": 22
+  },
+  "hazard_types": {
+    "river_flood": 22
+  },
+  "quality_flags": {
+    "gauge_point_is_not_inundation_footprint": 22,
+    "property_reach_relationship_required": 22,
+    "forecast_issue_time_unavailable_in_summary": 14,
+    "collection_scope_is_sample_not_national": 22,
+    "action_stage_does_not_mean_flooding": 18
+  },
+  "metrics": {
+    "gauges_received": 2710,
+    "flood_status_counts": {
+      "observed": {
+        "no_flooding": 1563,
+        "not_defined": 798,
+        "out_of_service": 144,
+        "obs_not_current": 162,
+        "low_threshold": 35,
+        "action": 7,
+        "minor": 1
+      },
+      "forecast": {
+        "fcst_not_current": 2236,
+        "no_flooding": 285,
+        "out_of_service": 144,
+        "minor": 3,
+        "low_threshold": 6,
+        "action": 11,
+        "not_defined": 25
+      }
+    },
+    "events_emitted": 22,
+    "coverage_scope": "bounded_bbox_sample_not_national",
+    "query_scope": {
+      "bbox": [
+        -90.0,
+        24.0,
+        -75.0,
+        37.0
+      ],
+      "srid": "EPSG_4326"
+    },
+    "scope": "NWPS gauge points; not a property inundation map",
+    "stale_observation_event_count": 0,
+    "forecast_summaries_without_issue_time": 14
+  },
+  "error": null,
+  "http_requests": [
+    {
+      "url": "https://api.water.noaa.gov/nwps/v1/gauges?bbox.xmin=-90&bbox.ymin=24&bbox.xmax=-75&bbox.ymax=37&srid=EPSG_4326",
+      "requested_at": "2026-09-14T13:05:39.215733Z",
+      "retrieved_at": "2026-09-14T13:06:00.194480Z",
+      "status": 200,
+      "bytes": 2850164,
+      "sha256": "a9458105fbf5eb602f116bdbd6c5b059125221b4a54cd1f963d4711f4ae95937",
+      "raw_path": "data/raw/nwps/20260914T130539.202279Z-b150939d/a9458105fbf5eb602f116bdbd6c5b059125221b4a54cd1f963d4711f4ae95937.bin",
+      "headers": {
+        "Date": "Mon, 14 Sep 2026 13:05:59 GMT",
+        "Content-Type": "application/json"
+      }
+    }
+  ],
+  "changed_records": 22
+}

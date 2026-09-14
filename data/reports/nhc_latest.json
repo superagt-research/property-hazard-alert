@@ -1,0 +1,207 @@
+{
+  "run_id": "20260914T125808.787778Z-53a122ab",
+  "source": "nhc",
+  "started_at": "2026-09-14T12:58:08.787778Z",
+  "completed_at": "2026-09-14T12:58:09.648427Z",
+  "status": "partial",
+  "records_loaded": 14,
+  "records_quarantined": 0,
+  "geometry_present": 14,
+  "geometry_roles": {
+    "point": 2,
+    "forecast_cone": 2,
+    "forecast_track": 4,
+    "observed_wind_extent": 1,
+    "forecast_wind_extent": 5
+  },
+  "hazard_types": {
+    "tropical_cyclone": 14
+  },
+  "quality_flags": {
+    "us_boundary_spatial_match_pending": 14,
+    "storm_center_is_not_impact_footprint": 14,
+    "cone_is_not_wind_footprint": 2,
+    "track_is_not_impact_footprint": 4,
+    "analyzed_extent_not_ground_observation": 1,
+    "forecast_valid_time_unavailable": 5
+  },
+  "metrics": {
+    "active_storms": 2,
+    "products_fetched": 8,
+    "geometry_quarantine": [
+      {
+        "storm_id": "ep152026",
+        "product": "initialWindExtent",
+        "warning": "placemark_0:degenerate KML polygon"
+      }
+    ],
+    "product_failures": [],
+    "scope": "all NHC basin candidates; U.S. spatial match pending"
+  },
+  "error": null,
+  "http_requests": [
+    {
+      "url": "https://www.nhc.noaa.gov/CurrentStorms.json",
+      "requested_at": "2026-09-14T12:58:08.808457Z",
+      "retrieved_at": "2026-09-14T12:58:08.932863Z",
+      "status": 200,
+      "bytes": 9239,
+      "sha256": "7299d74386b33bca8aeb8d5e459701dc82e96f261e97a5148c33171fda7c3489",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/7299d74386b33bca8aeb8d5e459701dc82e96f261e97a5148c33171fda7c3489.bin",
+      "headers": {
+        "Content-Type": "application/json",
+        "Last-Modified": "Mon, 14 Sep 2026 09:24:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:05 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"2417-65b6dfe92a323\"",
+        "Age": "4"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP142026_019adv_CONE.kmz",
+      "requested_at": "2026-09-14T12:58:08.932863Z",
+      "retrieved_at": "2026-09-14T12:58:09.016584Z",
+      "status": 200,
+      "bytes": 10096,
+      "sha256": "6b079ebd8fb340e68106e2df36c6af4e1e6d60091efc65996a2d173fb530d358",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/6b079ebd8fb340e68106e2df36c6af4e1e6d60091efc65996a2d173fb530d358.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:42:24 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:01 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"2770-65b6d69c9ae66\"",
+        "Age": "8"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP142026_019adv_TRACK.kmz",
+      "requested_at": "2026-09-14T12:58:09.019584Z",
+      "retrieved_at": "2026-09-14T12:58:09.104033Z",
+      "status": 200,
+      "bytes": 7884,
+      "sha256": "618e8e55ae276741908a01135c807e3c08acef35934c42b4d326093eef1842fc",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/618e8e55ae276741908a01135c807e3c08acef35934c42b4d326093eef1842fc.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:42:24 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:01 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"1ecc-65b6d69ccfa27\"",
+        "Age": "8"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP142026_initialradii_019adv.kmz",
+      "requested_at": "2026-09-14T12:58:09.105033Z",
+      "retrieved_at": "2026-09-14T12:58:09.179349Z",
+      "status": 200,
+      "bytes": 3800,
+      "sha256": "a3b0a31b2ac8f9493da0b3cdb253a8452bccb09cc9e34eca14b2f2e1fa3f6a75",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/a3b0a31b2ac8f9493da0b3cdb253a8452bccb09cc9e34eca14b2f2e1fa3f6a75.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:42:54 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:02 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"ed8-65b6d6b8edabb\"",
+        "Age": "7"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP142026_forecastradii_019adv.kmz",
+      "requested_at": "2026-09-14T12:58:09.180084Z",
+      "retrieved_at": "2026-09-14T12:58:09.269574Z",
+      "status": 200,
+      "bytes": 5516,
+      "sha256": "726a94cc58b2bf9815a530a901c81231ed2cdaa8bbcda0559c2f41078bbdccce",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/726a94cc58b2bf9815a530a901c81231ed2cdaa8bbcda0559c2f41078bbdccce.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:42:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:02 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"158c-65b6d6b502e83\"",
+        "Age": "7"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP152026_003adv_CONE.kmz",
+      "requested_at": "2026-09-14T12:58:09.270568Z",
+      "retrieved_at": "2026-09-14T12:58:09.353075Z",
+      "status": 200,
+      "bytes": 15229,
+      "sha256": "1aa74eb17df13f4e599820b5d3c3fffaf1bf28bfd70827706b3c66e591f59026",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/1aa74eb17df13f4e599820b5d3c3fffaf1bf28bfd70827706b3c66e591f59026.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:40:51 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:05 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"3b7d-65b6d64378117\"",
+        "Age": "4"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP152026_003adv_TRACK.kmz",
+      "requested_at": "2026-09-14T12:58:09.359072Z",
+      "retrieved_at": "2026-09-14T12:58:09.460733Z",
+      "status": 200,
+      "bytes": 8020,
+      "sha256": "1bc6d4f08ad27a0b3941560fad55e82fc553469313ab41be9235adc31545a4d3",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/1bc6d4f08ad27a0b3941560fad55e82fc553469313ab41be9235adc31545a4d3.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:40:55 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:04 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"1f54-65b6d6479028a\"",
+        "Age": "5"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP152026_initialradii_003adv.kmz",
+      "requested_at": "2026-09-14T12:58:09.461735Z",
+      "retrieved_at": "2026-09-14T12:58:09.554654Z",
+      "status": 200,
+      "bytes": 611,
+      "sha256": "3ce4036fe0ea2b264eabcfd469e52f87ab455ec0faedd7e53f6ba15257ee47a8",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/3ce4036fe0ea2b264eabcfd469e52f87ab455ec0faedd7e53f6ba15257ee47a8.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:41:26 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:05 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"263-65b6d664b232b\"",
+        "Age": "4"
+      }
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/storm_graphics/api/EP152026_forecastradii_003adv.kmz",
+      "requested_at": "2026-09-14T12:58:09.555653Z",
+      "retrieved_at": "2026-09-14T12:58:09.643848Z",
+      "status": 200,
+      "bytes": 7299,
+      "sha256": "0a0731f2eb6f5c97fd5a8eef8696d1ddb1ced202ef5dc06376e064b7cebb9592",
+      "raw_path": "data/raw/nhc/20260914T125808.787778Z-53a122ab/0a0731f2eb6f5c97fd5a8eef8696d1ddb1ced202ef5dc06376e064b7cebb9592.bin",
+      "headers": {
+        "Content-Type": "application/vnd.google-earth.kmz",
+        "Last-Modified": "Mon, 14 Sep 2026 08:41:22 GMT",
+        "Date": "Mon, 14 Sep 2026 12:58:09 GMT",
+        "Expires": "Mon, 14 Sep 2026 13:03:05 GMT",
+        "Cache-Control": "max-age=300",
+        "ETag": "\"1c83-65b6d661715d5\"",
+        "Age": "4"
+      }
+    }
+  ],
+  "changed_records": 0
+}

@@ -1,0 +1,53 @@
+test_radar_does_not_become_confirmed_tornado (test_core_nws.NormalizationTests.test_radar_does_not_become_confirmed_tornado) ... ok
+test_tests_and_marine_excluded (test_core_nws.NormalizationTests.test_tests_and_marine_excluded) ... ok
+test_unknown_schema_quarantines (test_core_nws.NormalizationTests.test_unknown_schema_quarantines) ... ok
+test_url_boundary (test_core_nws.NormalizationTests.test_url_boundary) ... ok
+test_watch_and_fire_weather_not_observed (test_core_nws.NormalizationTests.test_watch_and_fire_weather_not_observed) ... ok
+test_absence_is_not_release (test_core_nws.StateTests.test_absence_is_not_release) ... ok
+test_cancel_has_auditable_reference (test_core_nws.StateTests.test_cancel_has_auditable_reference) ... ok
+test_partial_never_publishes_current (test_core_nws.StateTests.test_partial_never_publishes_current) ... ok
+test_repeat_and_old_revision (test_core_nws.StateTests.test_repeat_and_old_revision) ... ok
+test_antimeridian_cannot_be_silently_used_as_planar_polygon (test_nhc_nwps.NHCSemantics.test_antimeridian_cannot_be_silently_used_as_planar_polygon) ... ok
+test_captured_live_geometry_replay (test_nhc_nwps.NHCSemantics.test_captured_live_geometry_replay) ... ok
+test_center_cannot_prove_property_impact (test_nhc_nwps.NHCSemantics.test_center_cannot_prove_property_impact) ... ok
+test_degenerate_polygon_is_quarantined (test_nhc_nwps.NHCSemantics.test_degenerate_polygon_is_quarantined) ... ok
+test_empty_index_is_valid_but_absent_array_is_not (test_nhc_nwps.NHCSemantics.test_empty_index_is_valid_but_absent_array_is_not) ... ok
+test_forecast_wind_has_no_invented_valid_time (test_nhc_nwps.NHCSemantics.test_forecast_wind_has_no_invented_valid_time) ... ok
+test_kml21_polygon_with_hole_and_cone_semantics (test_nhc_nwps.NHCSemantics.test_kml21_polygon_with_hole_and_cone_semantics) ... ok
+test_link_rejects_unapproved_host (test_nhc_nwps.NHCSemantics.test_link_rejects_unapproved_host) ... ok
+test_xml_entities_are_rejected (test_nhc_nwps.NHCSemantics.test_xml_entities_are_rejected) ... ok
+test_action_stage_is_potential (test_nhc_nwps.NWPSSemantics.test_action_stage_is_potential) ... ok
+test_captured_live_hydrograph (test_nhc_nwps.NWPSSemantics.test_captured_live_hydrograph) ... ok
+test_hydrograph_revision_and_units (test_nhc_nwps.NWPSSemantics.test_hydrograph_revision_and_units) ... ok
+test_missing_array_raises (test_nhc_nwps.NWPSSemantics.test_missing_array_raises) ... ok
+test_missing_forecast_is_not_no_flooding (test_nhc_nwps.NWPSSemantics.test_missing_forecast_is_not_no_flooding) ... ok
+test_missing_sentinels_and_negative_valid_stage (test_nhc_nwps.NWPSSemantics.test_missing_sentinels_and_negative_valid_stage) ... ok
+test_observed_and_forecast_are_distinct (test_nhc_nwps.NWPSSemantics.test_observed_and_forecast_are_distinct) ... ok
+test_old_flood_observation_is_unknown_not_current (test_nhc_nwps.NWPSSemantics.test_old_flood_observation_is_unknown_not_current) ... ok
+test_out_of_service_flood_cannot_be_current (test_nhc_nwps.NWPSSemantics.test_out_of_service_flood_cannot_be_current) ... ok
+test_expired_cap_message_is_not_unqualified_active_until_event_end (test_review_regressions.ReviewRegressions.test_expired_cap_message_is_not_unqualified_active_until_event_end) ... ok
+test_failed_snapshot_does_not_clear_last_known_event (test_review_regressions.ReviewRegressions.test_failed_snapshot_does_not_clear_last_known_event) ... ok
+test_feed_generation_time_does_not_create_new_earthquake_revision (test_review_regressions.ReviewRegressions.test_feed_generation_time_does_not_create_new_earthquake_revision) ... ok
+test_one_unsupported_zone_cannot_silently_yield_partial_warning_area (test_review_regressions.ReviewRegressions.test_one_unsupported_zone_cannot_silently_yield_partial_warning_area) ... ok
+test_polygon_with_invalid_ring_is_rejected (test_review_regressions.ReviewRegressions.test_polygon_with_invalid_ring_is_rejected) ... ok
+test_grid_truncation_and_entities_rejected (test_usgs_wildfire.USGSTests.test_grid_truncation_and_entities_rejected) ... ok
+test_grid_uses_declared_field_order_and_preserves_units (test_usgs_wildfire.USGSTests.test_grid_uses_declared_field_order_and_preserves_units) ... ok
+test_invalid_coordinates_and_nonfinite_magnitude_are_unknown (test_usgs_wildfire.USGSTests.test_invalid_coordinates_and_nonfinite_magnitude_are_unknown) ... ok
+test_non_earthquake_excluded_and_epicenter_not_buffered (test_usgs_wildfire.USGSTests.test_non_earthquake_excluded_and_epicenter_not_buffered) ... ok
+test_optional_enrichment_failure_retains_earthquake (test_usgs_wildfire.USGSTests.test_optional_enrichment_failure_retains_earthquake) ... ok
+test_outside_grid_is_unknown_not_zero_or_clamped (test_usgs_wildfire.USGSTests.test_outside_grid_is_unknown_not_zero_or_clamped) ... ok
+test_shakemap_deletion_supersedes_old_update (test_usgs_wildfire.USGSTests.test_shakemap_deletion_supersedes_old_update) ... ok
+test_arcgis_http200_error_not_empty_success (test_usgs_wildfire.WildfireTests.test_arcgis_http200_error_not_empty_success) ... ok
+test_contained_is_not_extinguished_rx_excluded (test_usgs_wildfire.WildfireTests.test_contained_is_not_extinguished_rx_excluded) ... ok
+test_future_fire_out_is_unknown_not_prematurely_expired (test_usgs_wildfire.WildfireTests.test_future_fire_out_is_unknown_not_prematurely_expired) ... ok
+test_join_uses_case_normalized_irwin_and_origin_codes_not_impact_codes (test_usgs_wildfire.WildfireTests.test_join_uses_case_normalized_irwin_and_origin_codes_not_impact_codes) ... ok
+test_missing_perimeter_is_point_and_unknown_extent (test_usgs_wildfire.WildfireTests.test_missing_perimeter_is_point_and_unknown_extent) ... ok
+test_perimeter_only_incident_survives_join (test_usgs_wildfire.WildfireTests.test_perimeter_only_incident_survives_join) ... ok
+test_perimeter_outage_retains_points_and_marks_incomplete (test_usgs_wildfire.WildfireTests.test_perimeter_outage_retains_points_and_marks_incomplete) ... ok
+test_snapshot_missing_id_marks_incomplete (test_usgs_wildfire.WildfireTests.test_snapshot_missing_id_marks_incomplete) ... ok
+test_stale_record_unknown_does_not_expire_and_stale_geometry_flagged (test_usgs_wildfire.WildfireTests.test_stale_record_unknown_does_not_expire_and_stale_geometry_flagged) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.216s
+
+OK

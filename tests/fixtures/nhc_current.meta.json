@@ -1,0 +1,7 @@
+{
+  "url": "https://www.nhc.noaa.gov/CurrentStorms.json",
+  "status": 200,
+  "content_type": "application/json",
+  "fetched_at": "2026-09-14T12:48:33.585304+00:00",
+  "bytes": 9239
+}

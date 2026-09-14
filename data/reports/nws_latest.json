@@ -1,0 +1,2873 @@
+{
+  "run_id": "20260914T125617.576340Z-e9bf62c1",
+  "source": "nws",
+  "started_at": "2026-09-14T12:56:17.576340Z",
+  "completed_at": "2026-09-14T12:56:39.801001Z",
+  "status": "success",
+  "records_loaded": 35,
+  "records_quarantined": 0,
+  "geometry_present": 35,
+  "geometry_roles": {
+    "warning_polygon": 7,
+    "forecast_or_county_zone": 28
+  },
+  "hazard_types": {
+    "flash_flood": 5,
+    "river_flood": 6,
+    "high_wind": 19,
+    "fire_weather": 4,
+    "freeze": 1
+  },
+  "quality_flags": {
+    "us_scope_requires_property_spatial_match": 35,
+    "native_geometry_missing": 28,
+    "coarse_zone_not_damage_footprint": 28,
+    "fire_weather_is_not_active_wildfire": 4,
+    "freeze_product_not_building_pipe_temperature": 1
+  },
+  "metrics": {
+    "active_feed_records": 323,
+    "normalized_records": 35,
+    "pages": 1,
+    "feed_updated_at": "2026-09-14T12:54:31+00:00",
+    "excluded_by_event": {
+      "Frost Advisory": 9,
+      "Marine Weather Statement": 1,
+      "Special Weather Statement": 4,
+      "Small Craft Advisory": 180,
+      "Dense Fog Advisory": 1,
+      "Beach Hazards Statement": 15,
+      "Gale Warning": 51,
+      "Heat Advisory": 20,
+      "High Surf Advisory": 2,
+      "Lake Wind Advisory": 1,
+      "Hazardous Seas Warning": 1,
+      "Brisk Wind Advisory": 1,
+      "Hydrologic Outlook": 2
+    },
+    "zone_requests_succeeded": 153,
+    "zone_request_errors": {},
+    "zone_budget": 1000,
+    "geometry_present": 35,
+    "recent_change_window_minutes": 20,
+    "change_feed_error": null,
+    "inventory_scope": "NWS national products; US property and territory scope applied downstream"
+  },
+  "error": null,
+  "http_requests": [
+    {
+      "url": "https://api.weather.gov/alerts/active?status=actual",
+      "requested_at": "2026-09-14T12:56:17.588296Z",
+      "retrieved_at": "2026-09-14T12:56:17.976288Z",
+      "status": 200,
+      "bytes": 1389006,
+      "sha256": "b417bad143e827323ef6ae7250c937373b0c7c4a767185f475f8f8ae60091041",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/b417bad143e827323ef6ae7250c937373b0c7c4a767185f475f8f8ae60091041.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "ETag": "W/\"4d86b979407dd5899b95993c9979296e:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "X-Request-ID": "01a09ffd-60c7-7d13-9d9e-294547405d66",
+        "Cache-Control": "public, max-age=5, s-maxage=5",
+        "Expires": "Mon, 14 Sep 2026 12:56:22 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:17 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/alerts?start=2026-09-14T12%3A36%3A17.576340%2B00%3A00&status=actual&limit=500",
+      "requested_at": "2026-09-14T12:56:17.980268Z",
+      "retrieved_at": "2026-09-14T12:56:18.234179Z",
+      "status": 200,
+      "bytes": 29007,
+      "sha256": "1abe7e0e1818caef58283725d4b25e5e161ff3df657715e7c73b9932e3ce2892",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1abe7e0e1818caef58283725d4b25e5e161ff3df657715e7c73b9932e3ce2892.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "ETag": "W/\"5155e4d637fca95b6d9d8eb50ebc2374:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "X-Request-ID": "01a09ffd-625f-707e-9395-6733c75da1b3",
+        "Cache-Control": "public, max-age=5, s-maxage=5",
+        "Expires": "Mon, 14 Sep 2026 12:56:23 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:18 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/alerts?start=2026-09-14T12:36:17.576340%2B00:00&status%5B0%5D=actual&limit=500&cursor=eyJ0IjoxNzg5Mzg5NDgwLCJpIjoidXJuOm9pZDoyLjQ5LjAuMS44NDAuMC5jOTc3MDEwNTRmOGJlNWJhYzA3N2NlYzQwYTkxYWUxMWVhZWZkNjU3LjAwMS4xIn0%3D",
+      "requested_at": "2026-09-14T12:56:18.236188Z",
+      "retrieved_at": "2026-09-14T12:56:18.408876Z",
+      "status": 200,
+      "bytes": 249,
+      "sha256": "11d0f975623f465995142c0d78bcac6ab8c358103fc27b047b9f918e4d08773f",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/11d0f975623f465995142c0d78bcac6ab8c358103fc27b047b9f918e4d08773f.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "ETag": "W/\"52bb60f51cbacc8fb653463617e4ea42:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "X-Request-ID": "01a09ffd-6331-7c1f-a7c0-8039570f5ec3",
+        "Cache-Control": "public, max-age=5, s-maxage=5",
+        "Expires": "Mon, 14 Sep 2026 12:56:23 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:18 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones?type=forecast&id=AKZ701%2CAKZ722%2CAKZ723%2CAKZ755%2CAKZ756%2CAKZ825%2CAKZ830%2CAKZ834%2CAKZ843%2CAKZ844%2CAKZ846%2CAKZ847%2CAKZ849%2CAKZ851%2CAKZ852%2CAZZ503%2CAZZ504%2CAZZ505%2CAZZ506%2CAZZ507%2CAZZ508%2CAZZ509%2CAZZ511%2CAZZ512%2CAZZ513%2CAZZ514%2CIAZ025%2CIAZ026%2CIAZ027%2CIAZ028%2CIAZ034%2CIAZ035%2CIAZ036%2CIAZ037%2CIAZ038%2CIAZ039%2CIAZ045%2CIAZ046%2CIAZ047%2CIAZ048%2CIAZ049%2CIAZ050%2CIAZ057%2CIAZ058%2CIAZ059%2CIAZ060%2CIAZ061%2CIAZ070%2CIAZ071%2CIAZ072&include_geometry=true",
+      "requested_at": "2026-09-14T12:56:18.415034Z",
+      "retrieved_at": "2026-09-14T12:56:18.559292Z",
+      "status": 200,
+      "bytes": 77105,
+      "sha256": "fc13ce479c071f40b9ccae9807e115ba3f98939e68779b76ed8184d286604125",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/fc13ce479c071f40b9ccae9807e115ba3f98939e68779b76ed8184d286604125.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "X-Request-ID": "01a09ffc-8fba-7e7e-ab9a-4320b42ff5a1",
+        "Cache-Control": "public, max-age=2591946, s-maxage=120",
+        "Expires": "Wed, 14 Oct 2026 12:55:24 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:18 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones?type=forecast&id=IAZ073%2CIAZ081%2CIAZ082%2CIAZ083%2CIAZ092%2CIAZ093%2CMTZ314%2CMTZ318%2CNDZ001%2CNDZ002%2CNDZ003%2CNDZ004%2CNDZ005%2CNDZ006%2CNDZ007%2CNDZ009%2CNDZ010%2CNDZ012%2CNDZ013%2CNDZ014%2CNDZ015%2CNDZ017%2CNDZ018%2CNDZ019%2CNDZ020%2CNDZ022%2CNDZ023%2CNDZ024%2CNDZ025%2CNDZ026%2CNDZ028%2CNDZ031%2CNDZ032%2CNDZ033%2CNDZ035%2CNDZ036%2CNDZ037%2CNDZ040%2CNDZ041%2CNDZ042%2CNDZ043%2CNDZ044%2CNDZ046%2CNDZ047%2CNDZ048%2CNDZ050%2CNDZ051%2CNDZ054%2CNDZ055%2CNDZ056&include_geometry=true",
+      "requested_at": "2026-09-14T12:56:18.567468Z",
+      "retrieved_at": "2026-09-14T12:56:18.715607Z",
+      "status": 200,
+      "bytes": 77292,
+      "sha256": "f818dcee79be0a4ae2f011e7219883d5bfaf91ea8d9eadd42eba0de518e2b51b",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/f818dcee79be0a4ae2f011e7219883d5bfaf91ea8d9eadd42eba0de518e2b51b.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "X-Request-ID": "01a09ffc-90a4-72b5-b39f-d58a3e35f1c4",
+        "Cache-Control": "public, max-age=2591946, s-maxage=120",
+        "Expires": "Wed, 14 Oct 2026 12:55:24 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:18 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones?type=forecast&id=NDZ057%2CNDZ058%2CNDZ059%2CNDZ060%2CNDZ061%2CNDZ062%2CSDZ001%2CSDZ002%2CSDZ003%2CSDZ004%2CSDZ005%2CSDZ009%2CSDZ010%2CSDZ012%2CSDZ013%2CSDZ014%2CSDZ015%2CSDZ073%2CSDZ078%2CWYZ002%2CWYZ003%2CWYZ016%2CWYZ023%2CWYZ110&include_geometry=true",
+      "requested_at": "2026-09-14T12:56:18.720610Z",
+      "retrieved_at": "2026-09-14T12:56:18.870927Z",
+      "status": 200,
+      "bytes": 41432,
+      "sha256": "64659c23331df08a0b533d2f0f62228b38128a306cd005838a01a22de0f4a72c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/64659c23331df08a0b533d2f0f62228b38128a306cd005838a01a22de0f4a72c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "X-Request-ID": "01a09ffc-917b-7cc8-a6e1-80005b546188",
+        "Cache-Control": "public, max-age=2591946, s-maxage=120",
+        "Expires": "Wed, 14 Oct 2026 12:55:24 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:18 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones?type=fire&id=CAZ124%2CCAZ129%2CCAZ142%2CCAZ143%2CCAZ144%2CCAZ145%2CCAZ146%2CCAZ147%2CCAZ148%2CCAZ149%2CCAZ150%2CNEZ434%2CNEZ435%2CNEZ436%2CWYZ279%2CWYZ280%2CWYZ283%2CWYZ289%2CWYZ300%2CWYZ417%2CWYZ418%2CWYZ419%2CWYZ420%2CWYZ421%2CWYZ422%2CWYZ423%2CWYZ427%2CWYZ432%2CWYZ433&include_geometry=true",
+      "requested_at": "2026-09-14T12:56:18.875919Z",
+      "retrieved_at": "2026-09-14T12:56:18.994667Z",
+      "status": 200,
+      "bytes": 35558,
+      "sha256": "03f41bdcf90ed8f91557f2641adbf1b4cceef7076ce42ee2c5b86bbee91b3ff3",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/03f41bdcf90ed8f91557f2641adbf1b4cceef7076ce42ee2c5b86bbee91b3ff3.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "X-Request-ID": "01a09ffc-9257-760e-89a3-05eaf4b26ccf",
+        "Cache-Control": "public, max-age=2591946, s-maxage=120",
+        "Expires": "Wed, 14 Oct 2026 12:55:25 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:19 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ124",
+      "requested_at": "2026-09-14T12:56:18.997060Z",
+      "retrieved_at": "2026-09-14T12:56:19.193069Z",
+      "status": 200,
+      "bytes": 440269,
+      "sha256": "b513ca84a5e4799bc13cc0bc7e5e0d581b670238cdb135bb30cd277eed2847e3",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/b513ca84a5e4799bc13cc0bc7e5e0d581b670238cdb135bb30cd277eed2847e3.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-8425-7b99-8f18-53fc225cd1b9",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263541, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:19 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ129",
+      "requested_at": "2026-09-14T12:56:19.198899Z",
+      "retrieved_at": "2026-09-14T12:56:19.399785Z",
+      "status": 200,
+      "bytes": 913700,
+      "sha256": "7eed3d3d2e65edb1033941954d30c46a16daf97934607163ee5342e27fdf5ae5",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/7eed3d3d2e65edb1033941954d30c46a16daf97934607163ee5342e27fdf5ae5.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-83fe-7957-8f67-8dfbd2908d87",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263541, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:19 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ142",
+      "requested_at": "2026-09-14T12:56:19.402792Z",
+      "retrieved_at": "2026-09-14T12:56:19.617212Z",
+      "status": 200,
+      "bytes": 612874,
+      "sha256": "390d1e3285014a1ddda8436be9c8d22af471e077250d5ee571339747d2ddbb21",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/390d1e3285014a1ddda8436be9c8d22af471e077250d5ee571339747d2ddbb21.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-83f6-71ff-8c66-f78d7fafbeb7",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263541, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:19 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ143",
+      "requested_at": "2026-09-14T12:56:19.624221Z",
+      "retrieved_at": "2026-09-14T12:56:19.899896Z",
+      "status": 200,
+      "bytes": 188738,
+      "sha256": "33639605275d60e04df33459ed9e4aec08cae339dfaee45aeb33899dfe030d39",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/33639605275d60e04df33459ed9e4aec08cae339dfaee45aeb33899dfe030d39.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a0916b-ee95-7cb4-9214-026a6dea4c92",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2347585, s-maxage=604800",
+        "Expires": "Sun, 11 Oct 2026 17:02:44 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:19 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ144",
+      "requested_at": "2026-09-14T12:56:19.901903Z",
+      "retrieved_at": "2026-09-14T12:56:20.111442Z",
+      "status": 200,
+      "bytes": 225502,
+      "sha256": "135ba0df081c87b390c55bb518a9ba8bb6e4f53c50bc2eaaed3e2c66f00d3f98",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/135ba0df081c87b390c55bb518a9ba8bb6e4f53c50bc2eaaed3e2c66f00d3f98.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-83fe-7511-a6ca-053fbf1963dc",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263540, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:20 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ145",
+      "requested_at": "2026-09-14T12:56:20.114861Z",
+      "retrieved_at": "2026-09-14T12:56:20.231623Z",
+      "status": 200,
+      "bytes": 22159,
+      "sha256": "f467fff7e8b49ec88708b57e2361b4d71e1f54169e9952a43418886ec8b5d2e7",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/f467fff7e8b49ec88708b57e2361b4d71e1f54169e9952a43418886ec8b5d2e7.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-8440-79c8-9598-2c790cc00625",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263540, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:20 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ146",
+      "requested_at": "2026-09-14T12:56:20.232623Z",
+      "retrieved_at": "2026-09-14T12:56:20.396901Z",
+      "status": 200,
+      "bytes": 263946,
+      "sha256": "3adf5185a8168db0fe98a485a1dcf25222ae6fa356e46e93cde018ff127dcce4",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3adf5185a8168db0fe98a485a1dcf25222ae6fa356e46e93cde018ff127dcce4.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-8414-7c32-8a7e-d19f51c784cf",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263540, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:20 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ147",
+      "requested_at": "2026-09-14T12:56:20.413632Z",
+      "retrieved_at": "2026-09-14T12:56:20.609464Z",
+      "status": 200,
+      "bytes": 603645,
+      "sha256": "8bb8c334c94c4aaf0c492e99482371a29bb4bb75ef39da9263c84c5f53320600",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8bb8c334c94c4aaf0c492e99482371a29bb4bb75ef39da9263c84c5f53320600.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a0916b-eea4-721f-b4b8-b5dd1b16c600",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2347585, s-maxage=604800",
+        "Expires": "Sun, 11 Oct 2026 17:02:45 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:20 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ148",
+      "requested_at": "2026-09-14T12:56:20.622603Z",
+      "retrieved_at": "2026-09-14T12:56:20.838524Z",
+      "status": 200,
+      "bytes": 198456,
+      "sha256": "43aa3f392721732f47227248fdbae6a1e198fc17f49260ad52cd924a1b4e8430",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/43aa3f392721732f47227248fdbae6a1e198fc17f49260ad52cd924a1b4e8430.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-8414-747b-a45f-20bf7f60f72c",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263540, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:20 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ149",
+      "requested_at": "2026-09-14T12:56:20.839523Z",
+      "retrieved_at": "2026-09-14T12:56:20.948854Z",
+      "status": 200,
+      "bytes": 22564,
+      "sha256": "cddc00e37fdd7a8cfe5fdbd1b6d4d9c083b71c92380c089e9deed4ee9bcdb358",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/cddc00e37fdd7a8cfe5fdbd1b6d4d9c083b71c92380c089e9deed4ee9bcdb358.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-841b-7438-8021-81dfbb20f694",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263539, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:21 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/CAZ150",
+      "requested_at": "2026-09-14T12:56:20.949857Z",
+      "retrieved_at": "2026-09-14T12:56:21.107012Z",
+      "status": 200,
+      "bytes": 175305,
+      "sha256": "4ee44be6b14e7f7b1c803afd6f0fe2c7b96bc8f784b0d1e3730639e2e27e8961",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/4ee44be6b14e7f7b1c803afd6f0fe2c7b96bc8f784b0d1e3730639e2e27e8961.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:26:07 GMT",
+        "X-Request-ID": "01a08c69-83f7-739d-8576-174880732a83",
+        "ETag": "W/\"1776356769:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2263539, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 17:42:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:21 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/NEZ434",
+      "requested_at": "2026-09-14T12:56:21.116656Z",
+      "retrieved_at": "2026-09-14T12:56:21.249004Z",
+      "status": 200,
+      "bytes": 8185,
+      "sha256": "c168ea0af84ab038487feae6ff422819f50bf4f26ff330c6fdd52896fd913182",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/c168ea0af84ab038487feae6ff422819f50bf4f26ff330c6fdd52896fd913182.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:55 GMT",
+        "X-Request-ID": "01a08c87-c0ec-72a9-a1dc-470341818470",
+        "ETag": "W/\"1776356757:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2265521, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 18:15:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:21 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/NEZ435",
+      "requested_at": "2026-09-14T12:56:21.262523Z",
+      "retrieved_at": "2026-09-14T12:56:21.380997Z",
+      "status": 200,
+      "bytes": 14963,
+      "sha256": "306b50605e43310bd2ece8aa7573805c884b22171bc06da7bd585c099d5e03f2",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/306b50605e43310bd2ece8aa7573805c884b22171bc06da7bd585c099d5e03f2.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:55 GMT",
+        "X-Request-ID": "01a08c85-abf5-7c2f-a162-68a23ed885a6",
+        "ETag": "W/\"1776356757:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2265384, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 18:12:45 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:21 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/NEZ436",
+      "requested_at": "2026-09-14T12:56:21.381997Z",
+      "retrieved_at": "2026-09-14T12:56:21.480049Z",
+      "status": 200,
+      "bytes": 14494,
+      "sha256": "ed7bc53227c7e498719a1edcdcc2d7a745011aeee1e9b896d57664f745e9d2f7",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/ed7bc53227c7e498719a1edcdcc2d7a745011aeee1e9b896d57664f745e9d2f7.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:55 GMT",
+        "X-Request-ID": "01a08c85-abf5-7440-8048-f70d76f81ea3",
+        "ETag": "W/\"1776356757:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2265384, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 18:12:45 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:21 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ279",
+      "requested_at": "2026-09-14T12:56:21.480049Z",
+      "retrieved_at": "2026-09-14T12:56:21.617340Z",
+      "status": 200,
+      "bytes": 27467,
+      "sha256": "4c76187c5b0836b60ab7b66a910d68cc09b1a67c46b8ae256c396c7a22d88a03",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/4c76187c5b0836b60ab7b66a910d68cc09b1a67c46b8ae256c396c7a22d88a03.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:50 GMT",
+        "X-Request-ID": "01a06128-5c42-71e1-913f-9978850311d1",
+        "Cache-Control": "public, max-age=1537849, s-maxage=604800",
+        "Expires": "Fri, 02 Oct 2026 08:07:10 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:21 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ280",
+      "requested_at": "2026-09-14T12:56:21.635203Z",
+      "retrieved_at": "2026-09-14T12:56:21.780622Z",
+      "status": 200,
+      "bytes": 29803,
+      "sha256": "484af2e039b17591b34edfd080bd4ce1e75ea5c4d8d24869c3b31503838a6f97",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/484af2e039b17591b34edfd080bd4ce1e75ea5c4d8d24869c3b31503838a6f97.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:50 GMT",
+        "X-Request-ID": "01a06128-5c19-78dd-811f-c137e781c494",
+        "Cache-Control": "public, max-age=1537849, s-maxage=604800",
+        "Expires": "Fri, 02 Oct 2026 08:07:10 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:21 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ283",
+      "requested_at": "2026-09-14T12:56:21.780622Z",
+      "retrieved_at": "2026-09-14T12:56:21.903696Z",
+      "status": 200,
+      "bytes": 87144,
+      "sha256": "c8a325ce777fbbfe1f0f58831a2c880569247162ef789c4e923e3bdf634b05b3",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/c8a325ce777fbbfe1f0f58831a2c880569247162ef789c4e923e3bdf634b05b3.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:48 GMT",
+        "X-Request-ID": "01a09c94-1e52-75fd-822f-9ba2f05ff535",
+        "ETag": "W/\"1776356750:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2534765, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 21:02:27 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:22 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ289",
+      "requested_at": "2026-09-14T12:56:21.903696Z",
+      "retrieved_at": "2026-09-14T12:56:22.063596Z",
+      "status": 200,
+      "bytes": 60647,
+      "sha256": "18a744281a97ba09bab3194273f96d29dc3604f5cfc2c3784fecab3895558471",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/18a744281a97ba09bab3194273f96d29dc3604f5cfc2c3784fecab3895558471.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:50 GMT",
+        "X-Request-ID": "01a06128-5c42-72e0-85b6-e890e0930416",
+        "Cache-Control": "public, max-age=1537848, s-maxage=604800",
+        "Expires": "Fri, 02 Oct 2026 08:07:10 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:22 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ300",
+      "requested_at": "2026-09-14T12:56:22.084200Z",
+      "retrieved_at": "2026-09-14T12:56:22.212491Z",
+      "status": 200,
+      "bytes": 14413,
+      "sha256": "bda3de71d19e45a82972f1a9e542c39ecb0c17d290e5e7e0f84f0d602a81b341",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/bda3de71d19e45a82972f1a9e542c39ecb0c17d290e5e7e0f84f0d602a81b341.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:50 GMT",
+        "X-Request-ID": "01a06128-5c1b-7eef-8465-c8edcf873982",
+        "Cache-Control": "public, max-age=1537848, s-maxage=604800",
+        "Expires": "Fri, 02 Oct 2026 08:07:10 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:22 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ417",
+      "requested_at": "2026-09-14T12:56:22.213517Z",
+      "retrieved_at": "2026-09-14T12:56:22.350498Z",
+      "status": 200,
+      "bytes": 10909,
+      "sha256": "3dd8808aa1eb02344823fc4a3a7a95ccf8d7e9fdfac5146a5c051f6dc3db32dd",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3dd8808aa1eb02344823fc4a3a7a95ccf8d7e9fdfac5146a5c051f6dc3db32dd.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a06350-7c89-716d-bc63-94cdf7e55405",
+        "Cache-Control": "public, max-age=1574032, s-maxage=604800",
+        "Expires": "Fri, 02 Oct 2026 18:10:14 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:22 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ418",
+      "requested_at": "2026-09-14T12:56:22.351509Z",
+      "retrieved_at": "2026-09-14T12:56:22.447334Z",
+      "status": 200,
+      "bytes": 23073,
+      "sha256": "1e9299789c0a91a6653083f5a6198459f99825566bb93e4d871c03851659b44a",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1e9299789c0a91a6653083f5a6198459f99825566bb93e4d871c03851659b44a.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a06350-7c52-79d5-87dc-25ffefd7b6dd",
+        "Cache-Control": "public, max-age=1574032, s-maxage=604800",
+        "Expires": "Fri, 02 Oct 2026 18:10:14 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:22 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ419",
+      "requested_at": "2026-09-14T12:56:22.447334Z",
+      "retrieved_at": "2026-09-14T12:56:22.607539Z",
+      "status": 200,
+      "bytes": 45984,
+      "sha256": "17ef447f700bac9bd23c157a02e27b48e208d26be73e3194eec70cfc40d84aca",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/17ef447f700bac9bd23c157a02e27b48e208d26be73e3194eec70cfc40d84aca.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a0810d-8b04-7d99-87a3-604c2edaf232",
+        "Cache-Control": "public, max-age=2072961, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 12:45:43 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:22 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ420",
+      "requested_at": "2026-09-14T12:56:22.613468Z",
+      "retrieved_at": "2026-09-14T12:56:22.816301Z",
+      "status": 200,
+      "bytes": 40300,
+      "sha256": "93e5bcfaca91d8207940af891b3dbd2d08af516f948cc383d9a40dad41785148",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/93e5bcfaca91d8207940af891b3dbd2d08af516f948cc383d9a40dad41785148.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a0810d-978a-7c0b-b61f-2704474765c8",
+        "Cache-Control": "public, max-age=2072964, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 12:45:46 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:22 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ421",
+      "requested_at": "2026-09-14T12:56:22.816301Z",
+      "retrieved_at": "2026-09-14T12:56:22.962714Z",
+      "status": 200,
+      "bytes": 20255,
+      "sha256": "1b45fb25c11e94692e404afe4da866ca4506388627f96babce3e9a5f6f400a2c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1b45fb25c11e94692e404afe4da866ca4506388627f96babce3e9a5f6f400a2c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a0810d-8ae4-7ca7-9e27-216595f2736e",
+        "Cache-Control": "public, max-age=2072960, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 12:45:43 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ422",
+      "requested_at": "2026-09-14T12:56:22.963717Z",
+      "retrieved_at": "2026-09-14T12:56:23.063518Z",
+      "status": 200,
+      "bytes": 23428,
+      "sha256": "204c6b632c75082c595434c48598f7fe28b1653655755b3796ed32096e4324aa",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/204c6b632c75082c595434c48598f7fe28b1653655755b3796ed32096e4324aa.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a0810d-8b26-79cb-be92-e682f614051a",
+        "Cache-Control": "public, max-age=2072960, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 12:45:43 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ423",
+      "requested_at": "2026-09-14T12:56:23.063518Z",
+      "retrieved_at": "2026-09-14T12:56:23.189247Z",
+      "status": 200,
+      "bytes": 20513,
+      "sha256": "ab87d63012530efa1913f908af7dd0326099e56ab77c9e07423ee2d3cf92de64",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/ab87d63012530efa1913f908af7dd0326099e56ab77c9e07423ee2d3cf92de64.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a08113-8e9f-70a1-8a4b-eb5e5d80663c",
+        "Cache-Control": "public, max-age=2073354, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 12:52:17 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ427",
+      "requested_at": "2026-09-14T12:56:23.191246Z",
+      "retrieved_at": "2026-09-14T12:56:23.316699Z",
+      "status": 200,
+      "bytes": 31202,
+      "sha256": "ae168470ab30bfe6296aeb821d4800c20bdaecb63d5ef0d44714591e2f4a52b9",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/ae168470ab30bfe6296aeb821d4800c20bdaecb63d5ef0d44714591e2f4a52b9.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a0810d-8afa-7cf3-8cef-6c35a9cec81b",
+        "Cache-Control": "public, max-age=2072960, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 12:45:43 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ432",
+      "requested_at": "2026-09-14T12:56:23.316699Z",
+      "retrieved_at": "2026-09-14T12:56:23.436594Z",
+      "status": 200,
+      "bytes": 13268,
+      "sha256": "3956da1021cc5d530c50b2b68f26aa4c54d9e031a915196050b7ac42b0fd50d9",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3956da1021cc5d530c50b2b68f26aa4c54d9e031a915196050b7ac42b0fd50d9.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:57 GMT",
+        "X-Request-ID": "01a089f8-9834-7613-a324-6f7cb6dbd445",
+        "Cache-Control": "public, max-age=2222582, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 06:19:25 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/fire/WYZ433",
+      "requested_at": "2026-09-14T12:56:23.437590Z",
+      "retrieved_at": "2026-09-14T12:56:23.556215Z",
+      "status": 200,
+      "bytes": 6199,
+      "sha256": "9c2326c8b6b66464095f236d31442a5277647945dcdb26777a0610cbb99ca688",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/9c2326c8b6b66464095f236d31442a5277647945dcdb26777a0610cbb99ca688.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:25:55 GMT",
+        "X-Request-ID": "01a08c87-c24d-79f2-80bc-851f3bca0cf6",
+        "ETag": "W/\"1776356757:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2265519, s-maxage=604800",
+        "Expires": "Sat, 10 Oct 2026 18:15:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ701",
+      "requested_at": "2026-09-14T12:56:23.557212Z",
+      "retrieved_at": "2026-09-14T12:56:23.692289Z",
+      "status": 200,
+      "bytes": 54783,
+      "sha256": "9fda2e79eea258620e64ef411335a9c65e24d3f335381b8592c3e735def9ac77",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/9fda2e79eea258620e64ef411335a9c65e24d3f335381b8592c3e735def9ac77.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:35 GMT",
+        "X-Request-ID": "01a09f1a-b228-7d75-bf4d-3369b1f09d97",
+        "ETag": "W/\"1776357097:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2577139, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 08:48:42 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ722",
+      "requested_at": "2026-09-14T12:56:23.693284Z",
+      "retrieved_at": "2026-09-14T12:56:23.855408Z",
+      "status": 200,
+      "bytes": 75507,
+      "sha256": "a4c995f8b2c01e0b543e5e62a395bf6e3e79429d3c09042bbca73a57abadc4d3",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a4c995f8b2c01e0b543e5e62a395bf6e3e79429d3c09042bbca73a57abadc4d3.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:35 GMT",
+        "X-Request-ID": "01a09f1a-b1d0-7a63-a1c6-66c2b5cb347e",
+        "ETag": "W/\"1776357097:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2577138, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 08:48:41 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:23 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ723",
+      "requested_at": "2026-09-14T12:56:23.856413Z",
+      "retrieved_at": "2026-09-14T12:56:24.033670Z",
+      "status": 200,
+      "bytes": 105249,
+      "sha256": "a633c80af272f1a6f19dcdfeef9d98bf592faa4f4d447d15b739526a11c11605",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a633c80af272f1a6f19dcdfeef9d98bf592faa4f4d447d15b739526a11c11605.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:31 GMT",
+        "X-Request-ID": "01a09f1a-8abe-7499-8551-c8f724b60083",
+        "ETag": "W/\"1776357093:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2577127, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 08:48:31 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:24 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ755",
+      "requested_at": "2026-09-14T12:56:24.035668Z",
+      "retrieved_at": "2026-09-14T12:56:24.147892Z",
+      "status": 304,
+      "bytes": 384818,
+      "sha256": "aafc5bb5b81ff5d1fd6e0741b94911aa35b1cf8b0772d7fd222988e9b7352a65",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/aafc5bb5b81ff5d1fd6e0741b94911aa35b1cf8b0772d7fd222988e9b7352a65.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:35 GMT",
+        "X-Request-ID": "01a03d0a-7678-7513-89ec-4607dee667b0",
+        "ETag": "W/\"1776357097:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=932064, s-maxage=604800",
+        "Expires": "Fri, 25 Sep 2026 07:48:11 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:47 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ756",
+      "requested_at": "2026-09-14T12:56:24.149892Z",
+      "retrieved_at": "2026-09-14T12:56:24.244733Z",
+      "status": 304,
+      "bytes": 24043,
+      "sha256": "8b0ab5dc1929fab369800f74152cb8f6897c1b1288d61a402f2fc866acc48240",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8b0ab5dc1929fab369800f74152cb8f6897c1b1288d61a402f2fc866acc48240.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:33 GMT",
+        "X-Request-ID": "01a083a3-98f5-791d-b48c-b0c49745488e",
+        "Cache-Control": "public, max-age=2116505, s-maxage=604800",
+        "Expires": "Fri, 09 Oct 2026 00:48:52 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:47 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ825",
+      "requested_at": "2026-09-14T12:56:24.244733Z",
+      "retrieved_at": "2026-09-14T12:56:24.453885Z",
+      "status": 200,
+      "bytes": 531401,
+      "sha256": "502ce8ea3dde408e1e1be5406be1b97a838215cfa0eaa62b6f81b5c5d0ac765b",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/502ce8ea3dde408e1e1be5406be1b97a838215cfa0eaa62b6f81b5c5d0ac765b.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:30 GMT",
+        "X-Request-ID": "01a02869-8be2-73a8-8a57-ddd6e0137b01",
+        "ETag": "W/\"1776357092:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=585816, s-maxage=604800",
+        "Expires": "Mon, 21 Sep 2026 07:40:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:24 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ830",
+      "requested_at": "2026-09-14T12:56:24.456888Z",
+      "retrieved_at": "2026-09-14T12:56:24.581845Z",
+      "status": 200,
+      "bytes": 4860,
+      "sha256": "d76244cfb65d6d3bd6d0522ae434cbf89483752dd6a3207fd3191b120cc2da08",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/d76244cfb65d6d3bd6d0522ae434cbf89483752dd6a3207fd3191b120cc2da08.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:30 GMT",
+        "X-Request-ID": "01a09bf9-638e-78de-87cc-a01549e0ef1b",
+        "ETag": "W/\"1776357092:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2524623, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:13:27 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:24 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ834",
+      "requested_at": "2026-09-14T12:56:24.583032Z",
+      "retrieved_at": "2026-09-14T12:56:24.761053Z",
+      "status": 200,
+      "bytes": 192839,
+      "sha256": "de66dbe787cf67738c4a2133018e6db74aa027dd0bfd52996e95a6973a1e24e4",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/de66dbe787cf67738c4a2133018e6db74aa027dd0bfd52996e95a6973a1e24e4.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:30 GMT",
+        "X-Request-ID": "01a09c1b-9b9a-707c-b2b9-2ed07cdc97dd",
+        "ETag": "W/\"1776357092:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526866, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:50:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:24 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ843",
+      "requested_at": "2026-09-14T12:56:24.763735Z",
+      "retrieved_at": "2026-09-14T12:56:24.854734Z",
+      "status": 200,
+      "bytes": 2596,
+      "sha256": "2f618cb610ff3062c374a7511cd7b6f39e8cfc05a71f58f515a0bd745babd9cd",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/2f618cb610ff3062c374a7511cd7b6f39e8cfc05a71f58f515a0bd745babd9cd.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:30 GMT",
+        "X-Request-ID": "01a09b4e-fea1-7a78-863c-8dfbc2f85f84",
+        "ETag": "W/\"1776357092:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2513456, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 15:07:20 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:24 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ844",
+      "requested_at": "2026-09-14T12:56:24.858728Z",
+      "retrieved_at": "2026-09-14T12:56:25.069973Z",
+      "status": 200,
+      "bytes": 4651,
+      "sha256": "7f943589f60504ef5bef25dcb59614b5f34dee1380c9c7d641be49d43b0c56ce",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/7f943589f60504ef5bef25dcb59614b5f34dee1380c9c7d641be49d43b0c56ce.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:32 GMT",
+        "X-Request-ID": "01a0497a-6ad6-738c-87c9-5479fcdc1c2d",
+        "Cache-Control": "public, max-age=1140569, s-maxage=604800",
+        "Expires": "Sun, 27 Sep 2026 17:45:54 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:25 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ846",
+      "requested_at": "2026-09-14T12:56:25.070975Z",
+      "retrieved_at": "2026-09-14T12:56:25.183266Z",
+      "status": 200,
+      "bytes": 5542,
+      "sha256": "f5500182303867ef71cd14983735543ca1d71cddfad8ecca246d29d4c04a6819",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/f5500182303867ef71cd14983735543ca1d71cddfad8ecca246d29d4c04a6819.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:32 GMT",
+        "X-Request-ID": "01a068bb-55e7-71d0-883e-a7efad4c1e4a",
+        "Cache-Control": "public, max-age=1664917, s-maxage=604800",
+        "Expires": "Sat, 03 Oct 2026 19:25:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:25 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ847",
+      "requested_at": "2026-09-14T12:56:25.183266Z",
+      "retrieved_at": "2026-09-14T12:56:25.283255Z",
+      "status": 200,
+      "bytes": 12268,
+      "sha256": "6785671f8bba4dc859b39f432462de987e244b7bd47504a613b87dc30b7b14c9",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/6785671f8bba4dc859b39f432462de987e244b7bd47504a613b87dc30b7b14c9.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:32 GMT",
+        "X-Request-ID": "01a0448c-2454-7f55-8632-282d90fe07ce",
+        "Cache-Control": "public, max-age=1057845, s-maxage=604800",
+        "Expires": "Sat, 26 Sep 2026 18:47:10 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:25 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ849",
+      "requested_at": "2026-09-14T12:56:25.285256Z",
+      "retrieved_at": "2026-09-14T12:56:25.384343Z",
+      "status": 200,
+      "bytes": 3209,
+      "sha256": "5bab959097e011510887443e638638d5359f14d699eaacb1c9c211b2264e9dc4",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/5bab959097e011510887443e638638d5359f14d699eaacb1c9c211b2264e9dc4.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:30 GMT",
+        "X-Request-ID": "01a0359b-d876-7696-87db-cbb0b8dbe4f4",
+        "ETag": "W/\"1776357092:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=807216, s-maxage=604800",
+        "Expires": "Wed, 23 Sep 2026 21:10:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:25 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ851",
+      "requested_at": "2026-09-14T12:56:25.384343Z",
+      "retrieved_at": "2026-09-14T12:56:25.498986Z",
+      "status": 200,
+      "bytes": 2613,
+      "sha256": "1fd441d849e071c4ee1d27a451c4880ab7bddea92abb5cf3a5399e80b61925a5",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1fd441d849e071c4ee1d27a451c4880ab7bddea92abb5cf3a5399e80b61925a5.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:30 GMT",
+        "X-Request-ID": "01a09bf9-639b-759a-9c2c-56468cba80fb",
+        "ETag": "W/\"1776357092:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2524622, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:13:27 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:25 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AKZ852",
+      "requested_at": "2026-09-14T12:56:25.499986Z",
+      "retrieved_at": "2026-09-14T12:56:25.619545Z",
+      "status": 200,
+      "bytes": 3854,
+      "sha256": "12d3996ef989fcff74f144eeb73443ca92d789f44d8bc34bb6b150ba5f70f157",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/12d3996ef989fcff74f144eeb73443ca92d789f44d8bc34bb6b150ba5f70f157.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:30 GMT",
+        "X-Request-ID": "01a09bf9-639f-76aa-aa10-014cbe10ff81",
+        "ETag": "W/\"1776357092:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2524622, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:13:27 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:25 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ503",
+      "requested_at": "2026-09-14T12:56:25.619545Z",
+      "retrieved_at": "2026-09-14T12:56:25.826664Z",
+      "status": 200,
+      "bytes": 579820,
+      "sha256": "78bd160da1a4593a62afc3e92af7ac82e055bbb1a3804cd25d0e72f0e3638c9a",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/78bd160da1a4593a62afc3e92af7ac82e055bbb1a3804cd25d0e72f0e3638c9a.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:54 GMT",
+        "X-Request-ID": "01a09c1d-a3df-7f48-b142-d8c5a570700b",
+        "ETag": "W/\"1776357056:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526998, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:53:03 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:25 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ504",
+      "requested_at": "2026-09-14T12:56:25.828665Z",
+      "retrieved_at": "2026-09-14T12:56:26.000920Z",
+      "status": 200,
+      "bytes": 197001,
+      "sha256": "8d3b1edce142cbcc3773fdd1f0dfbc2381e38700cd69747d72dbbcad14abc962",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8d3b1edce142cbcc3773fdd1f0dfbc2381e38700cd69747d72dbbcad14abc962.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:57 GMT",
+        "X-Request-ID": "f2bef04c-9573-4d66-81e7-b977c883ed1a",
+        "ETag": "W/\"1776357059:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526987, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:52:53 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:26 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ505",
+      "requested_at": "2026-09-14T12:56:26.003920Z",
+      "retrieved_at": "2026-09-14T12:56:26.120819Z",
+      "status": 200,
+      "bytes": 6465,
+      "sha256": "d2dd35905abcd6154d3005f1850d0099ef40327bc4127d4962b8e2d7481f3db8",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/d2dd35905abcd6154d3005f1850d0099ef40327bc4127d4962b8e2d7481f3db8.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:49 GMT",
+        "X-Request-ID": "f2bef04c-9573-4d66-81e7-b977c883ed1a",
+        "ETag": "W/\"1776357051:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526989, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:52:55 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:26 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ506",
+      "requested_at": "2026-09-14T12:56:26.122816Z",
+      "retrieved_at": "2026-09-14T12:56:26.287442Z",
+      "status": 200,
+      "bytes": 101559,
+      "sha256": "3c747afe22b29eb153968884afc216bdf3e910d886b8600f4dd035abed6c3404",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3c747afe22b29eb153968884afc216bdf3e910d886b8600f4dd035abed6c3404.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:54 GMT",
+        "X-Request-ID": "f2bef04c-9573-4d66-81e7-b977c883ed1a",
+        "ETag": "W/\"1776357056:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526990, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:52:56 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:26 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ507",
+      "requested_at": "2026-09-14T12:56:26.288451Z",
+      "retrieved_at": "2026-09-14T12:56:26.495795Z",
+      "status": 200,
+      "bytes": 857276,
+      "sha256": "8c263bdeea24642149524f1e950bc2434fe1dee83deb152626051d36933abc7f",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8c263bdeea24642149524f1e950bc2434fe1dee83deb152626051d36933abc7f.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:10 GMT",
+        "X-Request-ID": "01a03036-8b99-740d-a1dd-b94a4604bf46",
+        "ETag": "W/\"1776357072:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=716690, s-maxage=604800",
+        "Expires": "Tue, 22 Sep 2026 20:01:16 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:26 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ508",
+      "requested_at": "2026-09-14T12:56:26.498556Z",
+      "retrieved_at": "2026-09-14T12:56:26.732123Z",
+      "status": 200,
+      "bytes": 754496,
+      "sha256": "5ed1cd875595498cb7b4aa1ebdce5562716feac9ef0b26c21cf561e932f7fe2b",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/5ed1cd875595498cb7b4aa1ebdce5562716feac9ef0b26c21cf561e932f7fe2b.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:02 GMT",
+        "X-Request-ID": "f2bef04c-9573-4d66-81e7-b977c883ed1a",
+        "ETag": "W/\"1776357064:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526992, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:52:58 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:26 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ509",
+      "requested_at": "2026-09-14T12:56:26.740846Z",
+      "retrieved_at": "2026-09-14T12:56:26.976519Z",
+      "status": 200,
+      "bytes": 1599616,
+      "sha256": "e8e7417515bef17b3d978e8a752c32fbb9d7077f61f87fa0842317c9f7ae46fe",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e8e7417515bef17b3d978e8a752c32fbb9d7077f61f87fa0842317c9f7ae46fe.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:54 GMT",
+        "X-Request-ID": "01a09c1d-64b9-77a6-a24e-4f15ef841098",
+        "ETag": "W/\"1776357056:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526981, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:52:47 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:26 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ511",
+      "requested_at": "2026-09-14T12:56:26.982464Z",
+      "retrieved_at": "2026-09-14T12:56:27.177558Z",
+      "status": 200,
+      "bytes": 917029,
+      "sha256": "0d0a96df4c43e55e41da856caf3fe6710e82c867c5a51cabfe8969b7a1c053de",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/0d0a96df4c43e55e41da856caf3fe6710e82c867c5a51cabfe8969b7a1c053de.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:59 GMT",
+        "X-Request-ID": "01a09c1d-64a9-7970-b00e-76d00a41491e",
+        "ETag": "W/\"1776357061:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526980, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:52:47 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:27 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ512",
+      "requested_at": "2026-09-14T12:56:27.179559Z",
+      "retrieved_at": "2026-09-14T12:56:27.413027Z",
+      "status": 200,
+      "bytes": 610973,
+      "sha256": "4628a73bfad299780ea2f36510ffc949c43831dc968169c76596e6f250259a6b",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/4628a73bfad299780ea2f36510ffc949c43831dc968169c76596e6f250259a6b.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:36 GMT",
+        "X-Request-ID": "01a09c1d-6499-7788-96e7-1c931c75d27c",
+        "ETag": "W/\"1776357038:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526980, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:52:47 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:27 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ513",
+      "requested_at": "2026-09-14T12:56:27.417234Z",
+      "retrieved_at": "2026-09-14T12:56:27.634371Z",
+      "status": 200,
+      "bytes": 1256330,
+      "sha256": "119d2696de1daf4a9dbf35beb7f334ca6d6609dfe3b30399fd38665407dd1e5a",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/119d2696de1daf4a9dbf35beb7f334ca6d6609dfe3b30399fd38665407dd1e5a.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:36 GMT",
+        "X-Request-ID": "f2bef04c-9573-4d66-81e7-b977c883ed1a",
+        "ETag": "W/\"1776357038:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526993, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:53:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:27 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/AZZ514",
+      "requested_at": "2026-09-14T12:56:27.641370Z",
+      "retrieved_at": "2026-09-14T12:56:27.810446Z",
+      "status": 200,
+      "bytes": 313737,
+      "sha256": "5d9d7cf9bb2a61869645cbdfd74061a9c830bcdbc92ebd53a4fb69e635f7e59c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/5d9d7cf9bb2a61869645cbdfd74061a9c830bcdbc92ebd53a4fb69e635f7e59c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:59 GMT",
+        "X-Request-ID": "f2bef04c-9573-4d66-81e7-b977c883ed1a",
+        "ETag": "W/\"1776357061:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2526993, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:53:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:27 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ025",
+      "requested_at": "2026-09-14T12:56:27.811439Z",
+      "retrieved_at": "2026-09-14T12:56:27.898834Z",
+      "status": 304,
+      "bytes": 5768,
+      "sha256": "6cd0761b0c1f915dfe657795804aea64189a299f6180b9ff75991d1687cfae52",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/6cd0761b0c1f915dfe657795804aea64189a299f6180b9ff75991d1687cfae52.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-c026-73f7-9a73-7cd35b9ef536",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550362, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:19:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:48 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ026",
+      "requested_at": "2026-09-14T12:56:27.898834Z",
+      "retrieved_at": "2026-09-14T12:56:28.010268Z",
+      "status": 304,
+      "bytes": 4729,
+      "sha256": "c55ab564e5257e68711557a147eca2ba39eb0ec9e7ed73e0edbaceb22aec8317",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/c55ab564e5257e68711557a147eca2ba39eb0ec9e7ed73e0edbaceb22aec8317.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-c053-79d1-846b-270a1ab58fa7",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550362, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:19:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:48 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ027",
+      "requested_at": "2026-09-14T12:56:28.011263Z",
+      "retrieved_at": "2026-09-14T12:56:28.106972Z",
+      "status": 304,
+      "bytes": 6159,
+      "sha256": "734443a2f5502ac53812f9be108513f39f014940521843ed277fde2fa850772e",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/734443a2f5502ac53812f9be108513f39f014940521843ed277fde2fa850772e.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-c054-77e3-aa20-6ffb38d30f96",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550362, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:19:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:48 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ028",
+      "requested_at": "2026-09-14T12:56:28.106972Z",
+      "retrieved_at": "2026-09-14T12:56:28.197222Z",
+      "status": 304,
+      "bytes": 4678,
+      "sha256": "6f5c8d07bad338d0e09d69d2e99ec53f15eb0997154292d23508bc2e9edfe963",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/6f5c8d07bad338d0e09d69d2e99ec53f15eb0997154292d23508bc2e9edfe963.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-eaf3-73bb-8f4c-1a8c3d4c0715",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550373, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:48 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ034",
+      "requested_at": "2026-09-14T12:56:28.197222Z",
+      "retrieved_at": "2026-09-14T12:56:28.315732Z",
+      "status": 304,
+      "bytes": 6949,
+      "sha256": "b360d690ffc75743271b215b477cf31fea707e24d845db8e5e0777c906d69754",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/b360d690ffc75743271b215b477cf31fea707e24d845db8e5e0777c906d69754.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-f401-7051-87fb-bce1aa5f1c76",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550375, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:03 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:48 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ035",
+      "requested_at": "2026-09-14T12:56:28.315732Z",
+      "retrieved_at": "2026-09-14T12:56:28.420475Z",
+      "status": 200,
+      "bytes": 7144,
+      "sha256": "dd913531f36008effa8d624b2b4294dbf6068a554dc313c8a99cbb7929e1e0e0",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/dd913531f36008effa8d624b2b4294dbf6068a554dc313c8a99cbb7929e1e0e0.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:41 GMT",
+        "X-Request-ID": "01a06b74-0abb-704e-8735-4e7c10a03d85",
+        "Cache-Control": "public, max-age=1710574, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 08:06:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:28 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ036",
+      "requested_at": "2026-09-14T12:56:28.421476Z",
+      "retrieved_at": "2026-09-14T12:56:28.516235Z",
+      "status": 200,
+      "bytes": 6448,
+      "sha256": "64084cd8d36f3d30385023ad8182264ac4a2c503933eb71f2f5ea406538a3fd7",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/64084cd8d36f3d30385023ad8182264ac4a2c503933eb71f2f5ea406538a3fd7.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:41 GMT",
+        "X-Request-ID": "01a06b74-0ab8-7488-94c3-64878ba0c395",
+        "Cache-Control": "public, max-age=1710574, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 08:06:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:28 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ037",
+      "requested_at": "2026-09-14T12:56:28.518242Z",
+      "retrieved_at": "2026-09-14T12:56:28.643283Z",
+      "status": 200,
+      "bytes": 6158,
+      "sha256": "f8c13b3f6eae83d95c49ccc156c670a36b0dc1d26b9da9fcd3168b7913eba7fa",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/f8c13b3f6eae83d95c49ccc156c670a36b0dc1d26b9da9fcd3168b7913eba7fa.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:41 GMT",
+        "X-Request-ID": "01a06b74-0aae-7385-8228-18e00364d3f8",
+        "Cache-Control": "public, max-age=1710574, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 08:06:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:28 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ038",
+      "requested_at": "2026-09-14T12:56:28.644282Z",
+      "retrieved_at": "2026-09-14T12:56:28.748535Z",
+      "status": 200,
+      "bytes": 5760,
+      "sha256": "94a2ce7d467ebefc85c5950bb1e26ac98fa3dbec2434bea697c000d3665de5ca",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/94a2ce7d467ebefc85c5950bb1e26ac98fa3dbec2434bea697c000d3665de5ca.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-c05a-7d18-abf9-997a6fa231a0",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550202, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:19:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:28 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ039",
+      "requested_at": "2026-09-14T12:56:28.749526Z",
+      "retrieved_at": "2026-09-14T12:56:28.869701Z",
+      "status": 200,
+      "bytes": 5477,
+      "sha256": "a6bc77215edaf5f202b03fc59d86cbaac950af9df7553a9c55a8f11104732ec7",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a6bc77215edaf5f202b03fc59d86cbaac950af9df7553a9c55a8f11104732ec7.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-c055-7be0-aaf7-ba9425fd1373",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550202, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:19:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:28 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ045",
+      "requested_at": "2026-09-14T12:56:28.870941Z",
+      "retrieved_at": "2026-09-14T12:56:28.974622Z",
+      "status": 200,
+      "bytes": 6747,
+      "sha256": "e9f617e3d686592b404d526c8b89d320c8fee6fc32568976b6a00f1de1b599ce",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e9f617e3d686592b404d526c8b89d320c8fee6fc32568976b6a00f1de1b599ce.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:41 GMT",
+        "X-Request-ID": "01a06892-26f6-7c00-baf0-9c5948d0da54",
+        "Cache-Control": "public, max-age=1662214, s-maxage=604800",
+        "Expires": "Sat, 03 Oct 2026 18:40:03 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ046",
+      "requested_at": "2026-09-14T12:56:28.975586Z",
+      "retrieved_at": "2026-09-14T12:56:29.085857Z",
+      "status": 200,
+      "bytes": 5959,
+      "sha256": "3d94844d99eaef0bf3ef4aedcdc4e9b1183a88791f3cd49388511999f1856074",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3d94844d99eaef0bf3ef4aedcdc4e9b1183a88791f3cd49388511999f1856074.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:41 GMT",
+        "X-Request-ID": "01a06892-2909-7399-8e85-b2c44acddc09",
+        "Cache-Control": "public, max-age=1662215, s-maxage=604800",
+        "Expires": "Sat, 03 Oct 2026 18:40:04 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ047",
+      "requested_at": "2026-09-14T12:56:29.089857Z",
+      "retrieved_at": "2026-09-14T12:56:29.195497Z",
+      "status": 200,
+      "bytes": 5371,
+      "sha256": "65568d3dc75b6d1358cb74570b0a08008dc4a971304b3337546a5a8f84379b95",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/65568d3dc75b6d1358cb74570b0a08008dc4a971304b3337546a5a8f84379b95.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-c043-74e6-a6f1-6b1003f5f692",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550201, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:19:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ048",
+      "requested_at": "2026-09-14T12:56:29.195497Z",
+      "retrieved_at": "2026-09-14T12:56:29.325521Z",
+      "status": 200,
+      "bytes": 5660,
+      "sha256": "e2f4f98ccdbcbe383b16d6d01fec11d980a53aa705caf8133dcee8a949b7e13f",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e2f4f98ccdbcbe383b16d6d01fec11d980a53aa705caf8133dcee8a949b7e13f.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:38 GMT",
+        "X-Request-ID": "01a09d7f-fed9-7c08-af47-41604b2cf171",
+        "ETag": "W/\"1776357040:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550217, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:06 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ049",
+      "requested_at": "2026-09-14T12:56:29.325521Z",
+      "retrieved_at": "2026-09-14T12:56:29.456790Z",
+      "status": 200,
+      "bytes": 5472,
+      "sha256": "d942f8e01e70bce88feef556c32220616b16d1da1583d478abe9423cd24fb7e6",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/d942f8e01e70bce88feef556c32220616b16d1da1583d478abe9423cd24fb7e6.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:38 GMT",
+        "X-Request-ID": "01a09d80-1a0a-7491-b654-55400b772c42",
+        "ETag": "W/\"1776357040:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550224, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:13 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ050",
+      "requested_at": "2026-09-14T12:56:29.457803Z",
+      "retrieved_at": "2026-09-14T12:56:29.571614Z",
+      "status": 200,
+      "bytes": 5962,
+      "sha256": "0c718d521114c2eca0640abd08e4bafb45cead4e02ad705a501f239a876c86f7",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/0c718d521114c2eca0640abd08e4bafb45cead4e02ad705a501f239a876c86f7.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:38 GMT",
+        "X-Request-ID": "01a09d7f-fefb-7e4c-8445-1152adba6fb8",
+        "ETag": "W/\"1776357040:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550217, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:06 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ057",
+      "requested_at": "2026-09-14T12:56:29.572613Z",
+      "retrieved_at": "2026-09-14T12:56:29.668075Z",
+      "status": 200,
+      "bytes": 5855,
+      "sha256": "6792d4a8fb3a027c4f6874306779319fab1795b9a6d52e951fc782eca33ef01d",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/6792d4a8fb3a027c4f6874306779319fab1795b9a6d52e951fc782eca33ef01d.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-f430-7359-85fc-edb3e57cf07a",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550214, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:03 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ058",
+      "requested_at": "2026-09-14T12:56:29.669068Z",
+      "retrieved_at": "2026-09-14T12:56:29.784209Z",
+      "status": 200,
+      "bytes": 6454,
+      "sha256": "e2476bb3581f3146b57d76cb52e3357b13d79ec88fe2125000de102384b1b637",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e2476bb3581f3146b57d76cb52e3357b13d79ec88fe2125000de102384b1b637.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-f421-7f76-89cd-6df5ddad6e86",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550214, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:03 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:29 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ059",
+      "requested_at": "2026-09-14T12:56:29.784209Z",
+      "retrieved_at": "2026-09-14T12:56:29.900866Z",
+      "status": 200,
+      "bytes": 7142,
+      "sha256": "3e1b5e58307bcde25996fb8718ce5f27cfc4393b6984acbf7a568eb1e70ba969",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3e1b5e58307bcde25996fb8718ce5f27cfc4393b6984acbf7a568eb1e70ba969.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-fdc0-773f-8682-07f24aedcaff",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550216, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:06 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ060",
+      "requested_at": "2026-09-14T12:56:29.901866Z",
+      "retrieved_at": "2026-09-14T12:56:30.000709Z",
+      "status": 200,
+      "bytes": 12990,
+      "sha256": "1976504d4cca73e233bd26e973dd14414efef0ee23fbf76c9cfa6aad6a68e75e",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1976504d4cca73e233bd26e973dd14414efef0ee23fbf76c9cfa6aad6a68e75e.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:38 GMT",
+        "X-Request-ID": "01a09d80-1cdb-7cfc-8afb-77fe1b3a56f1",
+        "ETag": "W/\"1776357040:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550224, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:14 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ061",
+      "requested_at": "2026-09-14T12:56:30.000709Z",
+      "retrieved_at": "2026-09-14T12:56:30.115891Z",
+      "status": 200,
+      "bytes": 6314,
+      "sha256": "03cd0371380184c4194b4c8242d900769b4e22afde6efb938074139fdca5a553",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/03cd0371380184c4194b4c8242d900769b4e22afde6efb938074139fdca5a553.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-fd5e-78cc-a6ee-14d4d87a41c3",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550216, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:06 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ070",
+      "requested_at": "2026-09-14T12:56:30.115891Z",
+      "retrieved_at": "2026-09-14T12:56:30.233526Z",
+      "status": 200,
+      "bytes": 6254,
+      "sha256": "32c00ddec9e1d034ffa9d36ca0c13e33915ac67b9a2046d97c2cd6199c1b7882",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/32c00ddec9e1d034ffa9d36ca0c13e33915ac67b9a2046d97c2cd6199c1b7882.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-f357-78ac-862a-094a7501cb54",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550213, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:03 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ071",
+      "requested_at": "2026-09-14T12:56:30.237526Z",
+      "retrieved_at": "2026-09-14T12:56:30.339899Z",
+      "status": 200,
+      "bytes": 5972,
+      "sha256": "4c9beee4d101a0eedec4659cd9cae2ba1b9d18cd7af196e3576ade85da731e29",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/4c9beee4d101a0eedec4659cd9cae2ba1b9d18cd7af196e3576ade85da731e29.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-fd5a-7738-9295-76a46d181628",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550216, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:06 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ072",
+      "requested_at": "2026-09-14T12:56:30.342899Z",
+      "retrieved_at": "2026-09-14T12:56:30.442751Z",
+      "status": 200,
+      "bytes": 7393,
+      "sha256": "1f07d0116fc7f1c26592761851bd0bf82928447ce1fe6266583ccee9f5285a7e",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1f07d0116fc7f1c26592761851bd0bf82928447ce1fe6266583ccee9f5285a7e.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:38 GMT",
+        "X-Request-ID": "01a09d7f-f745-7165-8cdf-e0f9431e293d",
+        "ETag": "W/\"1776357040:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550214, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:04 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ073",
+      "requested_at": "2026-09-14T12:56:30.444755Z",
+      "retrieved_at": "2026-09-14T12:56:30.544459Z",
+      "status": 200,
+      "bytes": 13390,
+      "sha256": "e32bb2584389f9e132eecf71888992d9dbc3864375105c8c3370092fb194ee5e",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e32bb2584389f9e132eecf71888992d9dbc3864375105c8c3370092fb194ee5e.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:38 GMT",
+        "X-Request-ID": "01a03dba-44ee-7148-a151-faeb8e14ec48",
+        "ETag": "W/\"1776357040:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=943423, s-maxage=604800",
+        "Expires": "Fri, 25 Sep 2026 11:00:13 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ081",
+      "requested_at": "2026-09-14T12:56:30.545461Z",
+      "retrieved_at": "2026-09-14T12:56:30.657047Z",
+      "status": 200,
+      "bytes": 5772,
+      "sha256": "a94c4054ee8bf9fd94bd964316c4d86a1e44ba4902d5a1ea9c4103424beb147c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a94c4054ee8bf9fd94bd964316c4d86a1e44ba4902d5a1ea9c4103424beb147c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a09d7f-f747-7459-8a2e-6986cd2d8898",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550214, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:04 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ082",
+      "requested_at": "2026-09-14T12:56:30.657047Z",
+      "retrieved_at": "2026-09-14T12:56:30.767361Z",
+      "status": 200,
+      "bytes": 5517,
+      "sha256": "23961be82e8cafe4d8f28ead89e4f8f421dd80f5fe7855af799b2f98ec230497",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/23961be82e8cafe4d8f28ead89e4f8f421dd80f5fe7855af799b2f98ec230497.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:40 GMT",
+        "X-Request-ID": "01a0553e-df4c-7777-bab5-b782c69fcae3",
+        "Cache-Control": "public, max-age=1337988, s-maxage=604800",
+        "Expires": "Wed, 30 Sep 2026 00:36:18 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:30 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ083",
+      "requested_at": "2026-09-14T12:56:30.767361Z",
+      "retrieved_at": "2026-09-14T12:56:30.884279Z",
+      "status": 200,
+      "bytes": 6602,
+      "sha256": "93e344f1c7cedaea7d7c3f2d998abe5c592218436f95d5fbbe5e1742f1ba811a",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/93e344f1c7cedaea7d7c3f2d998abe5c592218436f95d5fbbe5e1742f1ba811a.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:39 GMT",
+        "X-Request-ID": "01a03dad-c623-7f41-beed-89132c75feed",
+        "ETag": "W/\"1776357041:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=942602, s-maxage=604800",
+        "Expires": "Fri, 25 Sep 2026 10:46:33 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ092",
+      "requested_at": "2026-09-14T12:56:30.886273Z",
+      "retrieved_at": "2026-09-14T12:56:30.992026Z",
+      "status": 200,
+      "bytes": 7045,
+      "sha256": "f870c4fbe4cbfe042aabed21a35b25073dc2b19a3d05fa3624196bd179097763",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/f870c4fbe4cbfe042aabed21a35b25073dc2b19a3d05fa3624196bd179097763.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:40 GMT",
+        "X-Request-ID": "01a05e3f-466c-72ad-9c9d-74f50481c25e",
+        "Cache-Control": "public, max-age=1489009, s-maxage=604800",
+        "Expires": "Thu, 01 Oct 2026 18:33:20 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/IAZ093",
+      "requested_at": "2026-09-14T12:56:30.992026Z",
+      "retrieved_at": "2026-09-14T12:56:31.107818Z",
+      "status": 200,
+      "bytes": 5909,
+      "sha256": "96c7174f3e249c73efb20bc691bd143c4e50bbc94cb28359f804d80f64138efd",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/96c7174f3e249c73efb20bc691bd143c4e50bbc94cb28359f804d80f64138efd.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:38 GMT",
+        "X-Request-ID": "01a09d80-2043-7b5a-a471-3432f4071aef",
+        "ETag": "W/\"1776357040:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2550224, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 01:20:15 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/MTZ314",
+      "requested_at": "2026-09-14T12:56:31.108819Z",
+      "retrieved_at": "2026-09-14T12:56:31.282028Z",
+      "status": 200,
+      "bytes": 85622,
+      "sha256": "3c7e3c233c5777687a3af4901a01d29566d472686d46e142512ebe62e9089de4",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3c7e3c233c5777687a3af4901a01d29566d472686d46e142512ebe62e9089de4.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:24 GMT",
+        "X-Request-ID": "01a096eb-5903-7714-aff2-b67130e5c675",
+        "ETag": "W/\"1776357086:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2439810, s-maxage=604800",
+        "Expires": "Mon, 12 Oct 2026 18:40:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/MTZ318",
+      "requested_at": "2026-09-14T12:56:31.282028Z",
+      "retrieved_at": "2026-09-14T12:56:31.437869Z",
+      "status": 200,
+      "bytes": 23536,
+      "sha256": "71de8cba242d71f426ef4b57fe68e1540b00d95795b9bd9d4b1ec797347f2567",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/71de8cba242d71f426ef4b57fe68e1540b00d95795b9bd9d4b1ec797347f2567.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:24 GMT",
+        "X-Request-ID": "01a0312c-e172-7db9-ade0-7cfefffa74ea",
+        "ETag": "W/\"1776357086:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=732829, s-maxage=604800",
+        "Expires": "Wed, 23 Sep 2026 00:30:20 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ001",
+      "requested_at": "2026-09-14T12:56:31.442869Z",
+      "retrieved_at": "2026-09-14T12:56:31.529818Z",
+      "status": 200,
+      "bytes": 9237,
+      "sha256": "9d4bd39501553a9f6d6d01212dfd305dcaab5cce4f2e4a0424a6586aa7889e0d",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/9d4bd39501553a9f6d6d01212dfd305dcaab5cce4f2e4a0424a6586aa7889e0d.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a0553f-039a-7437-b348-bb52825d5294",
+        "Cache-Control": "public, max-age=1337997, s-maxage=604800",
+        "Expires": "Wed, 30 Sep 2026 00:36:28 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ002",
+      "requested_at": "2026-09-14T12:56:31.546091Z",
+      "retrieved_at": "2026-09-14T12:56:31.648061Z",
+      "status": 200,
+      "bytes": 7579,
+      "sha256": "5f4d055a2afa36587807db3d28a931af39cf389281eb145ffd1188b6b479097f",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/5f4d055a2afa36587807db3d28a931af39cf389281eb145ffd1188b6b479097f.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a048cc-6bb8-75aa-9dd5-21d572ca4f55",
+        "Cache-Control": "public, max-age=1129160, s-maxage=604800",
+        "Expires": "Sun, 27 Sep 2026 14:35:51 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ003",
+      "requested_at": "2026-09-14T12:56:31.648061Z",
+      "retrieved_at": "2026-09-14T12:56:31.779972Z",
+      "status": 200,
+      "bytes": 7928,
+      "sha256": "b6c76a19daed62fb41dd9491292c755348a09c7fed8e9dc56631d29c195e56e3",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/b6c76a19daed62fb41dd9491292c755348a09c7fed8e9dc56631d29c195e56e3.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a0553f-044c-75a9-a6e3-712330985232",
+        "Cache-Control": "public, max-age=1337997, s-maxage=604800",
+        "Expires": "Wed, 30 Sep 2026 00:36:28 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:31 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ004",
+      "requested_at": "2026-09-14T12:56:31.779972Z",
+      "retrieved_at": "2026-09-14T12:56:31.915694Z",
+      "status": 200,
+      "bytes": 10376,
+      "sha256": "ea43eb7f080f01136c6317048ecda27d4b348149fb9da2a9da8a532f2e8c8335",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/ea43eb7f080f01136c6317048ecda27d4b348149fb9da2a9da8a532f2e8c8335.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a0553f-04ce-71e1-b484-0ee9e7439dbc",
+        "Cache-Control": "public, max-age=1337996, s-maxage=604800",
+        "Expires": "Wed, 30 Sep 2026 00:36:28 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ005",
+      "requested_at": "2026-09-14T12:56:31.916694Z",
+      "retrieved_at": "2026-09-14T12:56:32.022435Z",
+      "status": 200,
+      "bytes": 6617,
+      "sha256": "6cc6de49fd462333fe1fe178ec3813639d6b4dacada6c277b8df408f315c9b6b",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/6cc6de49fd462333fe1fe178ec3813639d6b4dacada6c277b8df408f315c9b6b.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a0553f-0541-780e-8b7b-998361b95d4b",
+        "Cache-Control": "public, max-age=1337996, s-maxage=604800",
+        "Expires": "Wed, 30 Sep 2026 00:36:28 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ006",
+      "requested_at": "2026-09-14T12:56:32.023427Z",
+      "retrieved_at": "2026-09-14T12:56:32.114091Z",
+      "status": 200,
+      "bytes": 7846,
+      "sha256": "c02d2a0246ee4682f645c6952cf7e1c73ea2487170b5a736c6c3dafa0cfb8b71",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/c02d2a0246ee4682f645c6952cf7e1c73ea2487170b5a736c6c3dafa0cfb8b71.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "73f03ad5-a723-4681-ad2e-d75e81abf36d",
+        "Cache-Control": "public, max-age=1313631, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:50:23 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ007",
+      "requested_at": "2026-09-14T12:56:32.114091Z",
+      "retrieved_at": "2026-09-14T12:56:32.230755Z",
+      "status": 200,
+      "bytes": 7829,
+      "sha256": "eea2bb2a97653c5602fc954c682111f2bf3c41d93f489cd7e601dad84a558139",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/eea2bb2a97653c5602fc954c682111f2bf3c41d93f489cd7e601dad84a558139.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "73f03ad5-a723-4681-ad2e-d75e81abf36d",
+        "Cache-Control": "public, max-age=1313635, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:50:27 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ009",
+      "requested_at": "2026-09-14T12:56:32.231148Z",
+      "retrieved_at": "2026-09-14T12:56:32.383492Z",
+      "status": 200,
+      "bytes": 45462,
+      "sha256": "4f3578dbde6c49b3ee2a2a819cb871ed34dec76ff8ef38e2d94777c172e7f73c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/4f3578dbde6c49b3ee2a2a819cb871ed34dec76ff8ef38e2d94777c172e7f73c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a04d34-8fde-74c4-99d0-0fa1660d3d14",
+        "Cache-Control": "public, max-age=1203093, s-maxage=604800",
+        "Expires": "Mon, 28 Sep 2026 11:08:05 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ010",
+      "requested_at": "2026-09-14T12:56:32.384398Z",
+      "retrieved_at": "2026-09-14T12:56:32.518003Z",
+      "status": 200,
+      "bytes": 26492,
+      "sha256": "e98517b25a2b1ac41a64f3739787ded8f88711ea2ba3d21c0889c43651b67bdc",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e98517b25a2b1ac41a64f3739787ded8f88711ea2ba3d21c0889c43651b67bdc.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a04827-9d54-7bdd-8eaf-a417d0be4ade",
+        "Cache-Control": "public, max-age=1118358, s-maxage=604800",
+        "Expires": "Sun, 27 Sep 2026 11:35:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ012",
+      "requested_at": "2026-09-14T12:56:32.518003Z",
+      "retrieved_at": "2026-09-14T12:56:32.635226Z",
+      "status": 200,
+      "bytes": 11753,
+      "sha256": "173d0bbd94aeda891aae2b62268098441691365d6147a681ca6f22820593e2d6",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/173d0bbd94aeda891aae2b62268098441691365d6147a681ca6f22820593e2d6.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a053c5-3d0e-73fd-8fc3-3844368d77f7",
+        "Cache-Control": "public, max-age=1313238, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:43:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ013",
+      "requested_at": "2026-09-14T12:56:32.637227Z",
+      "retrieved_at": "2026-09-14T12:56:32.749720Z",
+      "status": 200,
+      "bytes": 9567,
+      "sha256": "70b8a7edcaa8b3c17051290006beb02b733629983e54c87a62bb7758ae601dd6",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/70b8a7edcaa8b3c17051290006beb02b733629983e54c87a62bb7758ae601dd6.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a053c5-3d0b-7761-b70f-9fa577b70888",
+        "Cache-Control": "public, max-age=1313238, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:43:50 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ014",
+      "requested_at": "2026-09-14T12:56:32.751718Z",
+      "retrieved_at": "2026-09-14T12:56:32.889276Z",
+      "status": 200,
+      "bytes": 34598,
+      "sha256": "0f468684bcca7be7c56762eb382e80078d2de74726a35d2770a6440e41757e9e",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/0f468684bcca7be7c56762eb382e80078d2de74726a35d2770a6440e41757e9e.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a053ca-5341-765f-90e6-80e764f7ea66",
+        "Cache-Control": "public, max-age=1313571, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:49:23 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:32 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ015",
+      "requested_at": "2026-09-14T12:56:32.889276Z",
+      "retrieved_at": "2026-09-14T12:56:33.023292Z",
+      "status": 200,
+      "bytes": 33914,
+      "sha256": "1693cd3daac6fc3e90b6f9fbc978e051c87a2cb91f8df104282fd38c413ec0dc",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1693cd3daac6fc3e90b6f9fbc978e051c87a2cb91f8df104282fd38c413ec0dc.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a053ca-e70e-7ed6-a118-36bcc11b1240",
+        "Cache-Control": "public, max-age=1313608, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:50:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ017",
+      "requested_at": "2026-09-14T12:56:33.024594Z",
+      "retrieved_at": "2026-09-14T12:56:33.148632Z",
+      "status": 200,
+      "bytes": 56514,
+      "sha256": "1b3c6461ad1168a21c4aed26884847ffe0e05e51cef0ef604a038cee4c7905c5",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1b3c6461ad1168a21c4aed26884847ffe0e05e51cef0ef604a038cee4c7905c5.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:53 GMT",
+        "X-Request-ID": "01a0553f-0658-793e-837b-d02e9872e1db",
+        "Cache-Control": "public, max-age=1337995, s-maxage=604800",
+        "Expires": "Wed, 30 Sep 2026 00:36:28 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ018",
+      "requested_at": "2026-09-14T12:56:33.148632Z",
+      "retrieved_at": "2026-09-14T12:56:33.258937Z",
+      "status": 200,
+      "bytes": 21517,
+      "sha256": "43fd125411a1344205180f20adca890898511422abeb213037599d8a4e7960a1",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/43fd125411a1344205180f20adca890898511422abeb213037599d8a4e7960a1.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:53 GMT",
+        "X-Request-ID": "01a047eb-5660-71d8-a3f4-29c7702cb85e",
+        "Cache-Control": "public, max-age=1114407, s-maxage=604800",
+        "Expires": "Sun, 27 Sep 2026 10:30:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ019",
+      "requested_at": "2026-09-14T12:56:33.264437Z",
+      "retrieved_at": "2026-09-14T12:56:33.390201Z",
+      "status": 200,
+      "bytes": 25755,
+      "sha256": "a124ec45b9b6a173ed86245d4db5566472ae38a84ad08b330c204298bc0dd36c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a124ec45b9b6a173ed86245d4db5566472ae38a84ad08b330c204298bc0dd36c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a04827-a36e-7d30-809a-8f9ff57aa1c7",
+        "Cache-Control": "public, max-age=1118359, s-maxage=604800",
+        "Expires": "Sun, 27 Sep 2026 11:35:52 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ020",
+      "requested_at": "2026-09-14T12:56:33.392199Z",
+      "retrieved_at": "2026-09-14T12:56:33.501114Z",
+      "status": 200,
+      "bytes": 17771,
+      "sha256": "04cc8081d32194ac07e1f33b264c6028ae8f9499d05f448016fe107123789a15",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/04cc8081d32194ac07e1f33b264c6028ae8f9499d05f448016fe107123789a15.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a08015-b649-7360-bf83-630d28683f88",
+        "Cache-Control": "public, max-age=2056708, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 08:15:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ022",
+      "requested_at": "2026-09-14T12:56:33.502114Z",
+      "retrieved_at": "2026-09-14T12:56:33.615721Z",
+      "status": 200,
+      "bytes": 8530,
+      "sha256": "80508ecb3b7718940ea31b56d3fc1be2b30b1d1f11ec1a713d7786597f669823",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/80508ecb3b7718940ea31b56d3fc1be2b30b1d1f11ec1a713d7786597f669823.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09c92-feb3-74b1-842b-2366d4294aab",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2534681, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 21:01:14 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ023",
+      "requested_at": "2026-09-14T12:56:33.619723Z",
+      "retrieved_at": "2026-09-14T12:56:33.728429Z",
+      "status": 200,
+      "bytes": 9280,
+      "sha256": "47b12c7e7b46e64e40625468e82d8703d4df4d14d476fb1eeeb6852023211309",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/47b12c7e7b46e64e40625468e82d8703d4df4d14d476fb1eeeb6852023211309.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a067ff-b23c-7f29-ab43-d9958447454d",
+        "Cache-Control": "public, max-age=1652613, s-maxage=604800",
+        "Expires": "Sat, 03 Oct 2026 16:00:06 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ024",
+      "requested_at": "2026-09-14T12:56:33.729448Z",
+      "retrieved_at": "2026-09-14T12:56:33.819763Z",
+      "status": 200,
+      "bytes": 8716,
+      "sha256": "484e7934b35ca0cb7e3f8de5b017a8c6d99ae68218da5e8b61ccff4df58f21c7",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/484e7934b35ca0cb7e3f8de5b017a8c6d99ae68218da5e8b61ccff4df58f21c7.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a06b9e-6feb-76da-89f8-d955c2d1bf0f",
+        "Cache-Control": "public, max-age=1713347, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 08:52:20 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:33 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ025",
+      "requested_at": "2026-09-14T12:56:33.820639Z",
+      "retrieved_at": "2026-09-14T12:56:33.954904Z",
+      "status": 200,
+      "bytes": 5407,
+      "sha256": "5e6130d45cea84ede2b88d85865b41dce74f349edb5d046371b779c2be518e4c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/5e6130d45cea84ede2b88d85865b41dce74f349edb5d046371b779c2be518e4c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a067ff-b5f1-7126-8b25-eaaec928f3af",
+        "Cache-Control": "public, max-age=1652613, s-maxage=604800",
+        "Expires": "Sat, 03 Oct 2026 16:00:07 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ026",
+      "requested_at": "2026-09-14T12:56:33.954904Z",
+      "retrieved_at": "2026-09-14T12:56:34.077865Z",
+      "status": 200,
+      "bytes": 9830,
+      "sha256": "adf3fe0a663f62c094b63ccc37f15e750935aa01fa2ba9d4c8b46c3d2ccc304d",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/adf3fe0a663f62c094b63ccc37f15e750935aa01fa2ba9d4c8b46c3d2ccc304d.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "73f03ad5-a723-4681-ad2e-d75e81abf36d",
+        "Cache-Control": "public, max-age=1313640, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:50:34 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ028",
+      "requested_at": "2026-09-14T12:56:34.080393Z",
+      "retrieved_at": "2026-09-14T12:56:34.180351Z",
+      "status": 200,
+      "bytes": 7726,
+      "sha256": "93e858ba203a190e48bfcf2298841fb1599972bd6d8c90aafd6c396a18c62010",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/93e858ba203a190e48bfcf2298841fb1599972bd6d8c90aafd6c396a18c62010.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a06ba0-e348-7327-bb82-b6cc89576884",
+        "Cache-Control": "public, max-age=1713507, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 08:55:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ031",
+      "requested_at": "2026-09-14T12:56:34.181350Z",
+      "retrieved_at": "2026-09-14T12:56:34.286311Z",
+      "status": 200,
+      "bytes": 8345,
+      "sha256": "66457912f2c5b764ae2768af924af5d9ac3f4fde685c0ea706ceb53e1b5bfb61",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/66457912f2c5b764ae2768af924af5d9ac3f4fde685c0ea706ceb53e1b5bfb61.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a08012-744d-7a57-bf16-8f59a22b54d1",
+        "Cache-Control": "public, max-age=2056494, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 08:11:28 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ032",
+      "requested_at": "2026-09-14T12:56:34.287311Z",
+      "retrieved_at": "2026-09-14T12:56:34.398180Z",
+      "status": 200,
+      "bytes": 8636,
+      "sha256": "a47f7c9bbbdd30b1fb85164938d86e1dcc47f01f4c6dbd31cf8b83128bef745c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a47f7c9bbbdd30b1fb85164938d86e1dcc47f01f4c6dbd31cf8b83128bef745c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a06bee-9bf9-77ed-ab2d-5da00ec8e015",
+        "Cache-Control": "public, max-age=1718600, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 10:19:54 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ033",
+      "requested_at": "2026-09-14T12:56:34.400179Z",
+      "retrieved_at": "2026-09-14T12:56:34.534453Z",
+      "status": 200,
+      "bytes": 11974,
+      "sha256": "cf6c92ddc4c0ed299e315d9210b2c3eabaa92a852c44254fedde2c72bb4690b2",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/cf6c92ddc4c0ed299e315d9210b2c3eabaa92a852c44254fedde2c72bb4690b2.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a06cd4-9f29-74ae-ab3a-ae6fa7efb3b7",
+        "Cache-Control": "public, max-age=1733674, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 14:31:08 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ035",
+      "requested_at": "2026-09-14T12:56:34.535461Z",
+      "retrieved_at": "2026-09-14T12:56:34.669367Z",
+      "status": 200,
+      "bytes": 25383,
+      "sha256": "8343c8b5f861ef2d8eb4346440981c2bf7c450b726ee6cbcb9f7a60b0bbcd011",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8343c8b5f861ef2d8eb4346440981c2bf7c450b726ee6cbcb9f7a60b0bbcd011.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a052cd-6541-709e-9452-5c7ddfb679eb",
+        "Cache-Control": "public, max-age=1296993, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 13:13:07 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ036",
+      "requested_at": "2026-09-14T12:56:34.673926Z",
+      "retrieved_at": "2026-09-14T12:56:34.777176Z",
+      "status": 200,
+      "bytes": 10575,
+      "sha256": "881ffad6c1653170d58d8a7c96f16d7b7b2c9cc2304c14e58a7cc37c6f1da434",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/881ffad6c1653170d58d8a7c96f16d7b7b2c9cc2304c14e58a7cc37c6f1da434.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09bed-e385-7ecb-80b7-14dc95a58da2",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523859, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:53 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:34 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ037",
+      "requested_at": "2026-09-14T12:56:34.778176Z",
+      "retrieved_at": "2026-09-14T12:56:34.887499Z",
+      "status": 200,
+      "bytes": 11320,
+      "sha256": "a3df38c1922f27c26daba9c7b61e452fdbc80886e90ef714e10468371b1b0adc",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a3df38c1922f27c26daba9c7b61e452fdbc80886e90ef714e10468371b1b0adc.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09bed-e3f6-7b93-b6c3-4409912ac213",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523859, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:54 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ040",
+      "requested_at": "2026-09-14T12:56:34.889492Z",
+      "retrieved_at": "2026-09-14T12:56:35.090245Z",
+      "status": 200,
+      "bytes": 9638,
+      "sha256": "ba50f0d42c5f2c2a75a9dbed16415163dbac9df1de10185c99efcef8c68e9049",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/ba50f0d42c5f2c2a75a9dbed16415163dbac9df1de10185c99efcef8c68e9049.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09bed-e740-759b-bffd-4bd6be639888",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523859, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:54 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ041",
+      "requested_at": "2026-09-14T12:56:35.090245Z",
+      "retrieved_at": "2026-09-14T12:56:35.192896Z",
+      "status": 200,
+      "bytes": 12275,
+      "sha256": "346a0a442350ecbfd8f7eb99d81b04eb1917f456769f7fe8894dd9b4f42182ae",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/346a0a442350ecbfd8f7eb99d81b04eb1917f456769f7fe8894dd9b4f42182ae.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09bed-e0e5-74fb-af0b-a0a114713e1f",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523858, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:53 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ042",
+      "requested_at": "2026-09-14T12:56:35.193803Z",
+      "retrieved_at": "2026-09-14T12:56:35.390884Z",
+      "status": 200,
+      "bytes": 61546,
+      "sha256": "8024bc8a3e74825876a08161944c4e2e3f2d3370e5dda6199e416d78bc8f1505",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8024bc8a3e74825876a08161944c4e2e3f2d3370e5dda6199e416d78bc8f1505.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09c08-ab97-798a-83a0-ba8c0c55431d",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525614, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:30:09 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ043",
+      "requested_at": "2026-09-14T12:56:35.392892Z",
+      "retrieved_at": "2026-09-14T12:56:35.491550Z",
+      "status": 200,
+      "bytes": 8587,
+      "sha256": "d5e96d76be3fd7f0ef09fc1d8f4c2c2b65e83ef1bb8d23513dccd05b0a4eb206",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/d5e96d76be3fd7f0ef09fc1d8f4c2c2b65e83ef1bb8d23513dccd05b0a4eb206.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09bed-e0e1-765c-884c-94f937b42a54",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523859, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:54 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ044",
+      "requested_at": "2026-09-14T12:56:35.491550Z",
+      "retrieved_at": "2026-09-14T12:56:35.619314Z",
+      "status": 200,
+      "bytes": 9732,
+      "sha256": "eb3eadc389d857b51eb6dc29de95694b8a27eeeeb2d5fb73a02873d99ccd8e26",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/eb3eadc389d857b51eb6dc29de95694b8a27eeeeb2d5fb73a02873d99ccd8e26.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a0115d-34b1-78dd-8dca-a784048d3463",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2592000, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 12:56:35 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ046",
+      "requested_at": "2026-09-14T12:56:35.620310Z",
+      "retrieved_at": "2026-09-14T12:56:35.735710Z",
+      "status": 200,
+      "bytes": 24741,
+      "sha256": "d320753e4a3edfc5343ed982945d23cbe26a32c50ea2ffb090cc47b5506dccb3",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/d320753e4a3edfc5343ed982945d23cbe26a32c50ea2ffb090cc47b5506dccb3.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a06beb-61a8-79f0-ae6c-456d0796a4a4",
+        "Cache-Control": "public, max-age=1718388, s-maxage=604800",
+        "Expires": "Sun, 04 Oct 2026 10:16:23 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ047",
+      "requested_at": "2026-09-14T12:56:35.735710Z",
+      "retrieved_at": "2026-09-14T12:56:35.833590Z",
+      "status": 200,
+      "bytes": 11229,
+      "sha256": "b5ab90d4348cd876be998dbaf76cc14804deaddee8b1cabd840e1fdc17894261",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/b5ab90d4348cd876be998dbaf76cc14804deaddee8b1cabd840e1fdc17894261.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09bed-e728-73c1-8167-36674f6d4262",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523859, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:54 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:35 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ048",
+      "requested_at": "2026-09-14T12:56:35.834590Z",
+      "retrieved_at": "2026-09-14T12:56:35.966743Z",
+      "status": 200,
+      "bytes": 10328,
+      "sha256": "eb305f97af85f3b1dd1d08d07b557d866a2b3a8864bd6511504d8b065265876c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/eb305f97af85f3b1dd1d08d07b557d866a2b3a8864bd6511504d8b065265876c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09c08-b7c1-750d-a68b-f43a9199df21",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525616, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:30:12 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ050",
+      "requested_at": "2026-09-14T12:56:35.968741Z",
+      "retrieved_at": "2026-09-14T12:56:36.109812Z",
+      "status": 200,
+      "bytes": 8462,
+      "sha256": "aa6f5627743f30b1bb1423358bc5c79cdbff50865332e002378a0d4475df7671",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/aa6f5627743f30b1bb1423358bc5c79cdbff50865332e002378a0d4475df7671.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09f19-3d4c-730c-98cf-9e518e01f539",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2577030, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 08:47:06 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ051",
+      "requested_at": "2026-09-14T12:56:36.109812Z",
+      "retrieved_at": "2026-09-14T12:56:36.262373Z",
+      "status": 200,
+      "bytes": 10972,
+      "sha256": "aee33c56404fbe7658bcfe72fc5c2d90f485497a1d52a6613de7dce622ef029c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/aee33c56404fbe7658bcfe72fc5c2d90f485497a1d52a6613de7dce622ef029c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09f41-50f1-7e63-b311-b6f79314156e",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2579657, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 09:30:53 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ054",
+      "requested_at": "2026-09-14T12:56:36.266857Z",
+      "retrieved_at": "2026-09-14T12:56:36.363647Z",
+      "status": 200,
+      "bytes": 5198,
+      "sha256": "efd8f45f79be4b26430e81b5a62fa04a9d5e7c55b67ca1c1249c17c9b9cc1847",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/efd8f45f79be4b26430e81b5a62fa04a9d5e7c55b67ca1c1249c17c9b9cc1847.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:53 GMT",
+        "X-Request-ID": "01a053ca-e621-7bc9-b540-e3b19a421b11",
+        "Cache-Control": "public, max-age=1313605, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:50:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ055",
+      "requested_at": "2026-09-14T12:56:36.364642Z",
+      "retrieved_at": "2026-09-14T12:56:36.447263Z",
+      "status": 200,
+      "bytes": 5567,
+      "sha256": "15c6711f8863cc23b35c88ca3b739f45a5fbbdcd740409cd986186e54b8dfbf9",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/15c6711f8863cc23b35c88ca3b739f45a5fbbdcd740409cd986186e54b8dfbf9.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:37 GMT",
+        "X-Request-ID": "01a053c6-5aa3-724c-84dc-70297f3655d3",
+        "Cache-Control": "public, max-age=1313307, s-maxage=604800",
+        "Expires": "Tue, 29 Sep 2026 17:45:03 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ056",
+      "requested_at": "2026-09-14T12:56:36.447263Z",
+      "retrieved_at": "2026-09-14T12:56:36.553007Z",
+      "status": 200,
+      "bytes": 9989,
+      "sha256": "3faa6bb1d58402bff741e74e06613e134989094e95abf8cf50ae79a231f2ade6",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3faa6bb1d58402bff741e74e06613e134989094e95abf8cf50ae79a231f2ade6.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a0553f-0730-7cd8-851d-fc7c3bb504d1",
+        "Cache-Control": "public, max-age=1337993, s-maxage=604800",
+        "Expires": "Wed, 30 Sep 2026 00:36:29 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ057",
+      "requested_at": "2026-09-14T12:56:36.554987Z",
+      "retrieved_at": "2026-09-14T12:56:36.697243Z",
+      "status": 200,
+      "bytes": 23923,
+      "sha256": "6f2ead9c8030d8d2dc6aae657181ef48e75d92b3ff6193904a02c2e6e9caaf32",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/6f2ead9c8030d8d2dc6aae657181ef48e75d92b3ff6193904a02c2e6e9caaf32.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:35 GMT",
+        "X-Request-ID": "01a09c92-f525-7ba6-b377-5f56111e17e3",
+        "ETag": "W/\"1776357097:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2534675, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 21:01:11 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ058",
+      "requested_at": "2026-09-14T12:56:36.697243Z",
+      "retrieved_at": "2026-09-14T12:56:36.844268Z",
+      "status": 200,
+      "bytes": 21723,
+      "sha256": "e1818cd0cc24736ff4b6032cf4dfd7d333b18f289fb94176a1e0b5cb68bc94ad",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e1818cd0cc24736ff4b6032cf4dfd7d333b18f289fb94176a1e0b5cb68bc94ad.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09c92-f679-7df2-89d6-aa15ed050221",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2534676, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 21:01:12 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:36 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ059",
+      "requested_at": "2026-09-14T12:56:36.845262Z",
+      "retrieved_at": "2026-09-14T12:56:36.981104Z",
+      "status": 200,
+      "bytes": 7870,
+      "sha256": "b5df61e2fccd9713fb82b565f9ce2bee189353334226f5609109bcfdb485a0f5",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/b5df61e2fccd9713fb82b565f9ce2bee189353334226f5609109bcfdb485a0f5.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:37 GMT",
+        "X-Request-ID": "01a08015-b61c-7d4c-92f3-99c06bbb11d6",
+        "Cache-Control": "public, max-age=2056704, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 08:15:01 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:37 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ060",
+      "requested_at": "2026-09-14T12:56:36.981104Z",
+      "retrieved_at": "2026-09-14T12:56:37.114426Z",
+      "status": 200,
+      "bytes": 39337,
+      "sha256": "dcaf40ed085851e1ed62015f02fa1745641b5de41d211bd657529e6a9cf6d593",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/dcaf40ed085851e1ed62015f02fa1745641b5de41d211bd657529e6a9cf6d593.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:44 GMT",
+        "X-Request-ID": "01a09bed-e8a9-76ff-887b-9605a42b9686",
+        "ETag": "W/\"1776357046:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523858, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:55 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:37 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ061",
+      "requested_at": "2026-09-14T12:56:37.115465Z",
+      "retrieved_at": "2026-09-14T12:56:37.263676Z",
+      "status": 200,
+      "bytes": 55708,
+      "sha256": "8c7f3c38c8bcbf403d62826cf7a9a88e35c398f8d8935aa666262511109f9875",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8c7f3c38c8bcbf403d62826cf7a9a88e35c398f8d8935aa666262511109f9875.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:35 GMT",
+        "X-Request-ID": "01a09bed-e0e3-7ad9-8415-6e81a51bd0df",
+        "ETag": "W/\"1776357097:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523856, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:53 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:37 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/NDZ062",
+      "requested_at": "2026-09-14T12:56:37.266675Z",
+      "retrieved_at": "2026-09-14T12:56:37.429278Z",
+      "status": 200,
+      "bytes": 31683,
+      "sha256": "c5d6cc93cbfde262bedfb55629c5fdd030ad831df4e5c06d29d53077d355ae73",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/c5d6cc93cbfde262bedfb55629c5fdd030ad831df4e5c06d29d53077d355ae73.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:51 GMT",
+        "X-Request-ID": "01a09bed-e95e-7a02-b524-e6971bc00ed5",
+        "ETag": "W/\"1776357053:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2523858, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:00:55 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:37 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ001",
+      "requested_at": "2026-09-14T12:56:37.430406Z",
+      "retrieved_at": "2026-09-14T12:56:37.548121Z",
+      "status": 200,
+      "bytes": 10547,
+      "sha256": "259946b0e259e19e5a37dc373544b641655ad2653059c90a864e91ba24f7eb13",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/259946b0e259e19e5a37dc373544b641655ad2653059c90a864e91ba24f7eb13.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:24 GMT",
+        "X-Request-ID": "01a09c09-fd9d-79f3-89c8-680ce1adeafe",
+        "ETag": "W/\"1776357086:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525698, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:31:35 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:37 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ002",
+      "requested_at": "2026-09-14T12:56:37.555110Z",
+      "retrieved_at": "2026-09-14T12:56:37.648369Z",
+      "status": 200,
+      "bytes": 7668,
+      "sha256": "33bc9d9fb582dc59356c45b0bc036fafaf05f71cb3e23ae678c7be3319aaee2b",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/33bc9d9fb582dc59356c45b0bc036fafaf05f71cb3e23ae678c7be3319aaee2b.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:25 GMT",
+        "X-Request-ID": "01a09c0a-0f32-75cb-80f3-b69569137dd1",
+        "ETag": "W/\"1776357087:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525703, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:31:40 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:37 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ003",
+      "requested_at": "2026-09-14T12:56:37.648369Z",
+      "retrieved_at": "2026-09-14T12:56:37.811537Z",
+      "status": 200,
+      "bytes": 19978,
+      "sha256": "1c31a259f956257893953d9adfbf9952bddcfe458f70bba7420c3d4578d7e85f",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/1c31a259f956257893953d9adfbf9952bddcfe458f70bba7420c3d4578d7e85f.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a09bbf-c6ba-7955-b74f-af52081fd367",
+        "ETag": "W/\"1776357048:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2520834, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 17:10:31 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:37 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ004",
+      "requested_at": "2026-09-14T12:56:37.812538Z",
+      "retrieved_at": "2026-09-14T12:56:38.020164Z",
+      "status": 200,
+      "bytes": 10687,
+      "sha256": "fc9d7b469171ee92bd43acb5c44dcca0552bd67e4482373fdf7d581a2cbdf5de",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/fc9d7b469171ee92bd43acb5c44dcca0552bd67e4482373fdf7d581a2cbdf5de.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a09ea5-8ca9-7e75-a384-ce79a7aca6c9",
+        "ETag": "W/\"1776357048:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2569446, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 06:40:44 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ005",
+      "requested_at": "2026-09-14T12:56:38.021166Z",
+      "retrieved_at": "2026-09-14T12:56:38.115009Z",
+      "status": 200,
+      "bytes": 7649,
+      "sha256": "e551e3df8491ec26c1b838a7a855ab18213c1d07c6b4ffef7a5a40e741bdba5a",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e551e3df8491ec26c1b838a7a855ab18213c1d07c6b4ffef7a5a40e741bdba5a.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a09ea1-3cfe-71bd-903e-9b31227e0c18",
+        "ETag": "W/\"1776357048:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2569164, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 06:36:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ009",
+      "requested_at": "2026-09-14T12:56:38.115009Z",
+      "retrieved_at": "2026-09-14T12:56:38.233755Z",
+      "status": 200,
+      "bytes": 12499,
+      "sha256": "eb6f488ccce07c85b444a1d2c9dd114a47f0e1fdd452ba3f01db3e5122a6fa77",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/eb6f488ccce07c85b444a1d2c9dd114a47f0e1fdd452ba3f01db3e5122a6fa77.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a09ea1-3cf7-7f3a-8314-568218361870",
+        "ETag": "W/\"1776357048:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2569164, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 06:36:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ010",
+      "requested_at": "2026-09-14T12:56:38.233755Z",
+      "retrieved_at": "2026-09-14T12:56:38.335289Z",
+      "status": 200,
+      "bytes": 8053,
+      "sha256": "38f2650b6e3ff80ccb58ace0d4c1867888e0736a27e275a2da418d8e0a2f4deb",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/38f2650b6e3ff80ccb58ace0d4c1867888e0736a27e275a2da418d8e0a2f4deb.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a09ea1-3d0b-73f9-a211-20fa2f226d2f",
+        "ETag": "W/\"1776357048:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2569164, s-maxage=604800",
+        "Expires": "Wed, 14 Oct 2026 06:36:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ012",
+      "requested_at": "2026-09-14T12:56:38.335289Z",
+      "retrieved_at": "2026-09-14T12:56:38.458068Z",
+      "status": 200,
+      "bytes": 17926,
+      "sha256": "8909c8cf4fd9214d8a597b272dc0856b2f8e8a33c3a6f72dd0d58ef807d03adb",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/8909c8cf4fd9214d8a597b272dc0856b2f8e8a33c3a6f72dd0d58ef807d03adb.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:24 GMT",
+        "X-Request-ID": "01a09c0a-1097-77d5-b894-66728159d9cf",
+        "ETag": "W/\"1776357086:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525702, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:31:40 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ013",
+      "requested_at": "2026-09-14T12:56:38.460065Z",
+      "retrieved_at": "2026-09-14T12:56:38.607885Z",
+      "status": 200,
+      "bytes": 5863,
+      "sha256": "3b3c15ea60807bbb11383c3ecc8986c094d14011218c3c5aa142272e6cad1b9c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/3b3c15ea60807bbb11383c3ecc8986c094d14011218c3c5aa142272e6cad1b9c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:25 GMT",
+        "X-Request-ID": "01a09c0a-0f39-76d7-abde-a7c456dde78d",
+        "ETag": "W/\"1776357087:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525702, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:31:40 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ014",
+      "requested_at": "2026-09-14T12:56:38.607885Z",
+      "retrieved_at": "2026-09-14T12:56:38.732404Z",
+      "status": 200,
+      "bytes": 36827,
+      "sha256": "a523968f85b9a3b1262efca950a369895ab0f47079e37fd30a0ac33f0fdf4f32",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a523968f85b9a3b1262efca950a369895ab0f47079e37fd30a0ac33f0fdf4f32.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:24 GMT",
+        "X-Request-ID": "01a09c0a-0f3c-793f-be46-92caaa3ec390",
+        "ETag": "W/\"1776357086:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525702, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:31:40 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ015",
+      "requested_at": "2026-09-14T12:56:38.733404Z",
+      "retrieved_at": "2026-09-14T12:56:38.858331Z",
+      "status": 200,
+      "bytes": 36914,
+      "sha256": "ad25614a3899fa9e3268566291831274f7a15d72fad418d46ae8416d92764e7c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/ad25614a3899fa9e3268566291831274f7a15d72fad418d46ae8416d92764e7c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:46 GMT",
+        "X-Request-ID": "01a09bbf-d6c7-7731-bae5-750549f85234",
+        "ETag": "W/\"1776357048:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2520838, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 17:10:36 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:38 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ073",
+      "requested_at": "2026-09-14T12:56:38.862657Z",
+      "retrieved_at": "2026-09-14T12:56:38.986011Z",
+      "status": 200,
+      "bytes": 27110,
+      "sha256": "c2fe68c70587f22bdab468e2f4226c800c8f5c61062f3ae9f346353eb1817b07",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/c2fe68c70587f22bdab468e2f4226c800c8f5c61062f3ae9f346353eb1817b07.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:25 GMT",
+        "X-Request-ID": "01a09c0a-1097-7006-8fc3-6ef424ea6fbb",
+        "ETag": "W/\"1776357087:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525701, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:31:40 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:39 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/SDZ078",
+      "requested_at": "2026-09-14T12:56:38.986011Z",
+      "retrieved_at": "2026-09-14T12:56:39.085329Z",
+      "status": 200,
+      "bytes": 7552,
+      "sha256": "363070f4c10248cd5c8094ede1b6a2b6f8cc66b5cbb4562cc4ac5874c437bc70",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/363070f4c10248cd5c8094ede1b6a2b6f8cc66b5cbb4562cc4ac5874c437bc70.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:31:24 GMT",
+        "X-Request-ID": "01a09c0a-0f32-728f-a329-3754cfa88df1",
+        "ETag": "W/\"1776357086:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2525701, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 18:31:40 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:39 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/WYZ002",
+      "requested_at": "2026-09-14T12:56:39.086329Z",
+      "retrieved_at": "2026-09-14T12:56:39.234940Z",
+      "status": 200,
+      "bytes": 136780,
+      "sha256": "e7f86308a771418075c1d637fc7a2680e5246e5bdf2b8cf8409a0b84c5ec0115",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/e7f86308a771418075c1d637fc7a2680e5246e5bdf2b8cf8409a0b84c5ec0115.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:57 GMT",
+        "X-Request-ID": "01a09bc0-3f0b-7161-a611-1e56dffe269f",
+        "ETag": "W/\"1776357059:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2520863, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 17:11:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:39 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/WYZ003",
+      "requested_at": "2026-09-14T12:56:39.235940Z",
+      "retrieved_at": "2026-09-14T12:56:39.372945Z",
+      "status": 200,
+      "bytes": 72844,
+      "sha256": "fb03fb4d2947c98a2659285e545b8c453d30337a8cd6c9cbca8a3547d8750612",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/fb03fb4d2947c98a2659285e545b8c453d30337a8cd6c9cbca8a3547d8750612.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:52 GMT",
+        "X-Request-ID": "01a09bc0-c073-72d4-bca5-cb4048764095",
+        "ETag": "W/\"1776357054:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2520896, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 17:11:35 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:39 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/WYZ016",
+      "requested_at": "2026-09-14T12:56:39.380946Z",
+      "retrieved_at": "2026-09-14T12:56:39.508190Z",
+      "status": 200,
+      "bytes": 42146,
+      "sha256": "9442afb47949c6d82e5cac1a887a1151b439139906bb30e7dee697461384fcba",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/9442afb47949c6d82e5cac1a887a1151b439139906bb30e7dee697461384fcba.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:52 GMT",
+        "X-Request-ID": "01a09bc0-3eef-7643-ab66-726054b9d354",
+        "ETag": "W/\"1776357054:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2520863, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 17:11:02 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:39 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/WYZ023",
+      "requested_at": "2026-09-14T12:56:39.509195Z",
+      "retrieved_at": "2026-09-14T12:56:39.619592Z",
+      "status": 200,
+      "bytes": 17325,
+      "sha256": "d723659390ccd870efe25d9058eac9ae4583912165ee0cc545d3275ccfe072ef",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/d723659390ccd870efe25d9058eac9ae4583912165ee0cc545d3275ccfe072ef.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:54 GMT",
+        "X-Request-ID": "019fd3dd-b6ed-79ea-aeba-f349ddf87820",
+        "Cache-Control": "public, max-age=2090365, s-maxage=604800",
+        "Expires": "Thu, 08 Oct 2026 17:36:04 GMT",
+        "Date": "Mon, 14 Sep 2026 12:56:39 GMT"
+      }
+    },
+    {
+      "url": "https://api.weather.gov/zones/forecast/WYZ110",
+      "requested_at": "2026-09-14T12:56:39.621594Z",
+      "retrieved_at": "2026-09-14T12:56:39.732023Z",
+      "status": 304,
+      "bytes": 29931,
+      "sha256": "a2c01b2d0d9e417b93664d6f293ccc114b7fa31f1b7384a91cf6628114f6a08c",
+      "raw_path": "data/raw/nws/20260914T125617.576340Z-e9bf62c1/a2c01b2d0d9e417b93664d6f293ccc114b7fa31f1b7384a91cf6628114f6a08c.bin",
+      "headers": {
+        "Content-Type": "application/geo+json",
+        "Last-Modified": "Thu, 16 Apr 2026 16:30:58 GMT",
+        "X-Request-ID": "01a0998c-4070-7cff-8fa2-9b498a29a655",
+        "ETag": "W/\"1776357060:dtagent10337260504112723F6xZ:dtagent10337260504112723F6xZ\"",
+        "Cache-Control": "public, max-age=2484073, s-maxage=604800",
+        "Expires": "Tue, 13 Oct 2026 06:55:00 GMT",
+        "Date": "Mon, 14 Sep 2026 12:53:47 GMT"
+      }
+    }
+  ],
+  "changed_records": 28
+}
