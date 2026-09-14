@@ -53,7 +53,7 @@ SQLite仅发布完整运行的current；partial的记录仍在normalized与revis
 ## GitHub 版本与固定验证证据
 
 这是独立的 hazard alert 项目。完整方案、工程代码、48项测试和验证摘要均包含在仓库中。
-本仓库上传时为私有。没有部署AWS，也没有修改任何承保规则。
+本仓库公开提供方案、报告和可复用代码。没有部署AWS，也没有修改任何承保规则。
 
 `data/reports/` 是2026-09-14本地验证的历史摘要。大型原始响应、完整normalized输出、HTTP缓存和SQLite未上传；manifest中的相对raw_path只说明原采集结构，不表示该文件已随仓库提供。
 完整哈希核对命令 `python scripts/verify_delivery.py` 需要先在本机运行ETL生成各source的raw、normalized和latest manifest；新的实时数据可能与历史结果不同。无需重新取数即可运行全部48项语义测试。
